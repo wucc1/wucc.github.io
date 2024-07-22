@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Guide</title>
+    <url>/2024/06/05/Guide/</url>
+    <content><![CDATA[<table>
+<thead>
+<tr>
+<th align="center"><a href="http://localhost:4000/Projects/">Projects</a></th>
+<th align="center"><a href="https://localhost:4000/Issues">Research Issues</a></th>
+</tr>
+</thead>
+</table>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>This website reports all the data details related to our paper : Microservice architecture open source projects empirical research.</p>
+<h2 id="Menu"><a href="#Menu" class="headerlink" title="Menu"></a>Menu</h2><p><a href="http://localhost:4000/Projects/">Projects</a>: Shows information about 101 projects that contain “Microservice” in their description and subject, including name, GitHub link, description, and commits.<br><a href="https://localhost:4000/Issues">Issues</a>: We identified 3,412 issue instances. On this basis, we classified them into 10 categories: Programming issues, Optimization issues, Testability issues, Readability issues, Security issues, Robustness issues, Performance issues, Data consistency issues, Adaptability issues, and Microservice-specific issues.</p>
+]]></content>
+  </entry>
+</search>
