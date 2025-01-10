@@ -1,0 +1,2159 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="1. Classification of Microservice-specific changes          Category     Sub-type     Amount     Percentage     Total           Microservice-specific changes     Security     287     24.01%     1194">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Issues">
+<meta property="og:url" content="http://example.com/Microservice-specific/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1. Classification of Microservice-specific changes          Category     Sub-type     Amount     Percentage     Total           Microservice-specific changes     Security     287     24.01%     1194">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-07-01T03:31:38.000Z">
+<meta property="article:modified_time" content="2025-01-10T09:49:01.079Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://example.com/Microservice-specific/"/>
+
+
+
+
+
+  <title>Issues | Hexo</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-projects">
+          <a href="/Projects/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Projects
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-issues">
+          <a href="/Issues/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Issues
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+    
+    
+    <div class="post-block page">
+      <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline">Issues</h1>
+
+
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+        
+        
+          <h2>1. Classification of Microservice-specific changes</h2>
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Sub-type</th>
+    <th>Amount</th>
+    <th>Percentage</th>
+    <th>Total</th>
+  </tr>
+  <tr>
+    <td rowspan="8">Microservice-specific changes</td>
+    <td><a href="#Security">Security</td>
+    <td>287</td>
+    <td>24.01%</td>
+    <td rowspan="7">1194</td>
+  </tr>
+  <tr>
+    <td><a href="#Service communication and coordination">Service communication and coordination</td>
+    <td>202</td>
+    <td>16.90%</td>
+  </tr>
+  <tr>
+    <td><a href="#Containers and orchestration">Containers and orchestration</td>
+    <td>187</td>
+    <td>15.65%</td>
+  </tr>
+  <tr>
+    <td><a href="#Testability">Testability</td>
+    <td>172</td>
+    <td>14.39%</td>
+  </tr>
+  <tr>
+    <td><a href="#Service registration and discovery">Service registration and discovery</td>
+    <td>162</td>
+    <td>13.56%</td>
+  </tr>
+  <tr>
+    <td><a href="#Service gateway">Service gateway</td>
+    <td>65</td>
+    <td>5.44%</td>
+  </tr>
+  <tr>
+    <td><a href="#Microservice monitoring and tracing">Microservice monitoring and tracing</td>
+    <td>64</td>
+    <td>5.36%</td>
+  </tr>
+  <tr>
+    <td><a href="#Service protection">Service protection</td>
+    <td>56</td>
+    <td>4.69%</td>
+  </tr>
+
+<h3 id="Security">Security</h3>
+
+<table border="1">
+    <tr>
+        <td id="links-cell-1">
+https://github.com/xcyeye/aurora-blog/commit/d21ac240511d33b8b62b4f0a85bbb3f3d089047a<br>
+https://github.com/xcyeye/aurora-blog/commit/f72b1cefc53b7cfec7fd9080c16df86c4e2936f7<br>
+https://github.com/xcyeye/aurora-blog/commit/ab4ba75334b263863392ad611cc7ae2e2ded4d52<br>
+https://github.com/xcyeye/aurora-blog/commit/615acbfba8101814959a1d89211fa3146b3203a1<br>
+https://github.com/xcyeye/aurora-blog/commit/592ec411e736b0c66008de500a21cf697c3d4c97<br>
+https://github.com/xcyeye/aurora-blog/commit/2a424d37f2ead264d95241a39950ae749453e528<br>
+https://github.com/xcyeye/aurora-blog/commit/37dd4a2445cfe2c86fc6ef2fcf724d7c3a0ca534<br>
+https://github.com/xcyeye/aurora-blog/commit/17f71b032994002555bd19692ce9e089ed91ed3f<br>
+https://github.com/xcyeye/aurora-blog/commit/56fa0fd0b37db881760d9727168246dd2bbe13d4<br>
+https://github.com/xcyeye/aurora-blog/commit/86943c19d69e00e9286f63d804404072f6807d95<br>
+https://github.com/xcyeye/aurora-blog/commit/b967ae01e4c15489a67099a21411b39642de1728<br>
+https://github.com/xcyeye/aurora-blog/commit/8ab1b3300695f00526ccebe3461d458b9c4f0565<br>
+https://github.com/xcyeye/aurora-blog/commit/1db13793dd1255a464a075aac17e0415fe85dd64<br>
+https://github.com/xcyeye/aurora-blog/commit/c84234688fd38cf85df6b10f8c30eb30682892f6<br>
+https://github.com/xcyeye/aurora-blog/commit/fb09ffdab929f9a13ad1a8836c43bdf441545d98<br>
+https://github.com/xcyeye/aurora-blog/commit/a73433e079caa801580dbd875921c55d9a387ac5<br>
+https://github.com/xcyeye/aurora-blog/commit/b006135fece5b2aad44370dcf1cab5b084328293<br>
+https://github.com/xcyeye/aurora-blog/commit/72a51426d07747af9856dd33436649b06c2bf8c7<br>
+https://github.com/xcyeye/aurora-blog/commit/c3a845c146adb230ffb7ea5e306dca4077bbef7d<br>
+https://github.com/xcyeye/aurora-blog/commit/f6a0d1978f016d62d698446f8288abc750b73476<br>
+https://github.com/xcyeye/aurora-blog/commit/c7cbdb3cfa9e35d27bcbd9653bda6824be9d0b95<br>
+https://github.com/xcyeye/aurora-blog/commit/eec06d281c84ee9a9cc1a4fe57b6358053e2ebc7<br>
+https://github.com/xcyeye/aurora-blog/commit/de59e39c3af22689c38e903031d3d59fdb596153<br>
+https://github.com/xcyeye/aurora-blog/commit/cecc133d2836b63d420ea5719c3385d60f118c32<br>
+https://github.com/xcyeye/aurora-blog/commit/d80947068dca7db66335308395ba3bb933bd6fe2<br>
+https://github.com/xcyeye/aurora-blog/commit/55ddc9cab0693f05a4675e418f597325ec9808da<br>
+https://github.com/xcyeye/aurora-blog/commit/7f4350aeb673dab59192584177a897aacebe4b28<br>
+https://github.com/xcyeye/aurora-blog/commit/807448aec5b041535fe4fbac90eca1138b2f439c<br>
+https://github.com/xcyeye/aurora-blog/commit/75c30d359e3d9e72b96d359fe0c80de82eb0a83c<br>
+https://github.com/xcyeye/aurora-blog/commit/dde18bf5d079d0a0128c2d6670057d84344cfbc4<br>
+https://github.com/xcyeye/aurora-blog/commit/62ecb17425bb2f5ab420b0f9c22244cd1101dea6<br>
+https://github.com/xcyeye/aurora-blog/commit/71149cae94d2ceec46eb9c530ded4b064a6de3c9<br>
+https://github.com/xcyeye/aurora-blog/commit/839b82ba8b052b02e24bcfe6da54160609a4fd4b<br>
+https://github.com/xcyeye/aurora-blog/commit/0d2a5629e89c73a32d6c79f04b51543e1513e006<br>
+https://github.com/xcyeye/aurora-blog/commit/7a0648dba55a98f61f4d81696307d86c82a1d34d<br>
+https://github.com/lizibin/black-shop/commit/1b4ea98958e665007b16373abd100f95a43f2900<br>
+https://github.com/lizibin/black-shop/commit/718f89d78e743a734ab115fe99d088dbc0895a2e<br>
+https://github.com/lizibin/black-shop/commit/a89ff908835b33856c6886886ba1dac0b094ca7c<br>
+https://github.com/lizibin/black-shop/commit/ba38741316b022a8f4ed4806b884d1c30bd575b4<br>
+https://github.com/lizibin/black-shop/commit/f23538e1fa576e2603d59541675aa5cb126b8289<br>
+https://github.com/lizibin/black-shop/commit/570992305c34bb69644e83d4fdf2b520090cd8d2<br>
+https://github.com/lizibin/black-shop/commit/a74150fa34a59d31c585f2dbab29787f243a6359<br>
+https://github.com/lizibin/black-shop/commit/157cdad69ec680814ece7af71368e2377143c5d6<br>
+https://github.com/lizibin/black-shop/commit/ed3adb2ec4e673da7d896cb5ad7908ebd4cffe02<br>
+https://github.com/lizibin/black-shop/commit/8dfbecbd17125793b0af91175df0f1fbd6ee656c<br>
+https://github.com/devdcores/BookStoreApp-Distributed-Application/commit/da33974e6f430b7766de8fe83dbbbbe632d42bf7<br>
+https://github.com/devdcores/BookStoreApp-Distributed-Application/commit/6eb6d67a65b2af95d691b21a7b67e1e6597f05dc<br>
+https://github.com/devdcores/BookStoreApp-Distributed-Application/commit/c2a218c2562db6670d1557d153db2575a29872ae<br>
+https://github.com/devdcores/BookStoreApp-Distributed-Application/commit/01cf8152fbf97ce2d08844f6228fbda58a0e53be<br>
+https://github.com/devdcores/BookStoreApp-Distributed-Application/commit/04c956648d150af60bc9acab9619fce08c48f525<br>
+https://github.com/nageoffer/congomall/commit/e9009c8f4024d015d081128dd3867a167b85fb31<br>
+https://github.com/nageoffer/congomall/commit/1342bf6247dbabf797a572f1eb7c5f8d8b0de28f<br>
+https://github.com/nageoffer/congomall/commit/17c54d73060dabd3e57ab5c8b4449e6967220b9b<br>
+https://github.com/nageoffer/congomall/commit/2cdb4d5e27300060aba1b40feaa01c6288750f5b<br>
+https://github.com/nageoffer/congomall/commit/534330321010e6f0ae6b2e77662e3841b2ebc8d3<br>
+https://github.com/nageoffer/congomall/commit/329adbe949aadf20b40bb406cc372cc3b19086ce<br>
+https://github.com/nageoffer/congomall/commit/ad3415bff3bf67841d33e4de405241d6362c68bb<br>
+https://github.com/GyalbuSherpa5/ecommerceMicroService/commit/1c03367f0219e47712cd4c165213bbe5c7deacfe<br>
+https://github.com/GyalbuSherpa5/ecommerceMicroService/commit/f31d44587d200b133a5bfd8c589265e0f5078059<br>
+https://github.com/GyalbuSherpa5/ecommerceMicroService/commit/260a3b359bf64230474bb5743e3f0e5fe325b833<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/82813f01222564a01636576b2012645a6bfbd62b<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/5637ad30808fb84cdc6cb142bc8e2e88c368a69e<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/273dcfbb43ff420fc4a6b3209f730d01d98e7ef0<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/e688c510ba0516bc815f0625b887e2ce8fe8c787<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/7918e2ff4f3178719a797b1991a1accb8ff85edd<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/7dbbbd1ab2fc63c01b37503349d2ec600c14d4d3<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/12a336f685d03da3c4e7a7f8632ed4aefd8e4433<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/1e0c53c194d944aa8d3f4e18b8e9d55ebe182a40<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/17ebf892396ac946554212d34c792bd18bed2637<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/20c4a29e3f70fd52409f1073ef3774506ac2d6f7<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/6d5735e9174f4e87716453fd706575829003ef42<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/acc4c9862abfe9141cd31f27186c6445deada7d3<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/e5ba620e67d28358fa340c0b4844ca9188aaa1bf<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/88141b013dea3173b574e022ae479e27422e5dd2<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/a924552d45df270b6469cd6b9923f2ab41913b3a<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/651b243402df073ec067906f921785f5e5b3ad21<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/623172517b5b674e88ab0583dc28ebf79c2d3a18<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/038b35d9ba69fa36a13a81f6c3eda9b7b8138a37<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/41ee9321115441f5b3ee7b67db3308484af50cbe<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/d799674968da43c7ba196b44c998ac0ea5ef4f25<br>
+https://github.com/lmxdawn/exchange/commit/3f4f0e555b256a548b7d82c974d9c2494c068973<br>
+https://github.com/lmxdawn/exchange/commit/51908da9365315aaa6744e0fd26a9a6202a9c3e7<br>
+https://github.com/JavatoDev-com/internet-banking-concept-microservices/commit/9c4cb844606a6929805925e1e62c2e1cf8277038<br>
+https://github.com/HMingR/irh/commit/382072a1fbc8e4f65f96d5e28ffbc0db5565d9c0<br>
+https://github.com/HMingR/irh/commit/ad13aff306852146b693c015b75a46cf7cbf5817<br>
+https://github.com/HMingR/irh/commit/12f40c6920eafda2f34f007a471d1d8f7c7061cb<br>
+https://github.com/HMingR/irh/commit/fb248be21ad432af4f77c5d7776a4eeba0741d0a<br>
+https://github.com/HMingR/irh/commit/3b55a24e9e7fbfc1c13e2be609a87d4cc5e22318<br>
+https://github.com/HMingR/irh/commit/57489c8d75ef781bf525f2f31b49cde995a07fa8<br>
+https://github.com/HMingR/irh/commit/45d18709e4ff13e9256ea50b629c655eafafd5ec<br>
+https://github.com/HMingR/irh/commit/fe5f4cacae2ddc2bc5fb73e780ec594e0da88b06<br>
+https://github.com/HMingR/irh/commit/0529d704735c109bd3c7063f843585082a5f58b4<br>
+https://github.com/Durancer/JMU-Campus/commit/4a41950074fad376813f4c13aad8b9fff8076fb4<br>
+https://github.com/Durancer/JMU-Campus/commit/c0a1e5eee85a67284690d74b865e5ae06b3461ce<br>
+https://github.com/Durancer/JMU-Campus/commit/62a0c1a67f0ea4c6e735aad74923421aa54797f7<br>
+https://github.com/Durancer/JMU-Campus/commit/6ee56ae4b2afb2adb2ee9ae49a0c46e6857affdc<br>
+https://github.com/Durancer/JMU-Campus/commit/7b69bc2c3a8bea5431261aed50e7ee0e0a3656dd<br>
+https://github.com/Durancer/JMU-Campus/commit/239ee445c6bba36545029f2c152d935227f900c4<br>
+https://github.com/Durancer/JMU-Campus/commit/80aa9e898a714d1654bcae778dbc1d18c9fbb06a<br>
+https://github.com/Zealon159/light-reading-cloud/commit/efc4428c6980bf3dead62479e4a5e85430fea4fa<br>
+https://github.com/Zealon159/light-reading-cloud/commit/95042b767e5db753028346cef7d5be1628c14be2<br>
+https://github.com/Zealon159/light-reading-cloud/commit/3ab1445f116499bc6ec725dae3f04f501a274154<br>
+https://github.com/Zealon159/light-reading-cloud/commit/bbb15d8693a16a16449c6f2028744fa506c6d802<br>
+https://github.com/Zealon159/light-reading-cloud/commit/c87c592996bff4a4741959d7a43547d515c9d691<br>
+https://github.com/imrenagi/microservice-skeleton/commit/a900cda42a577202fe65d10a47dc705b92ab8f1f<br>
+https://github.com/imrenagi/microservice-skeleton/commit/1b7c36c04371f2fab38ea59feeecfc562f683dc8<br>
+https://github.com/imrenagi/microservice-skeleton/commit/fa0b9259ca4b9ff1fc9d72d7d9fb9285f8b41bd3<br>
+https://github.com/imrenagi/microservice-skeleton/commit/cd976176925bfc41303f91f00495ef445d01d34d<br>
+https://github.com/imrenagi/microservice-skeleton/commit/ab4c4f56e0c01918caf90d2d9ff0572c6258552b<br>
+https://github.com/qa-guru/niffler/commit/2e01607c211e30c5ec031ceacbe4bb6912ddd2c1<br>
+https://github.com/paascloud/paascloud-master/commit/f1f7439587c06330de0c6a98345ff0c90775619b<br>
+https://github.com/paascloud/paascloud-master/commit/a231522350c4ff41ebcbf3f7e28ea89dec21b822<br>
+https://github.com/dongjuntao/readygo-mall-cloud/commit/f76b265eaf1fced7bcf4cb724a17113206157062<br>
+https://github.com/dongjuntao/readygo-mall-cloud/commit/28ba3ff84aedfac4209230bf5b40ccb9a5090006<br>
+https://github.com/dongjuntao/readygo-mall-cloud/commit/50de92fca0761c724e4363466113f4d6d8df1f50<br>
+https://github.com/dongjuntao/readygo-mall-cloud/commit/d9f0401e5b6093b1d076490c4dc1a2b709303188<br>
+https://github.com/dongjuntao/readygo-mall-cloud/commit/85ddb4009cbc858719231fb2b3b7a83d0855cdf3<br>
+https://github.com/dongjuntao/readygo-mall-cloud/commit/12d32024a137f8df00e141e22c1a1024775f56b8<br>
+https://github.com/MuhammetTahaDemiryol/rentacar-microservice/commit/54838ef97d89f2858ca0243865465f99dfc33f2c<br>
+https://github.com/MuhammetTahaDemiryol/rentacar-microservice/commit/b548abf7c02816570cda588c1480b0b78260d1f6<br>
+https://github.com/zoltanvin/royal-reserve-bank/commit/790b40a55fff1e55abd14232ef7f004053d10e72<br>
+https://github.com/zoltanvin/royal-reserve-bank/commit/93ea0d56cf3295210b8296432016e8f951f90e22<br>
+https://github.com/SanShanYouJiu/sanshanblog/commit/3040e907362dfe309200e23ac74ac647d0042b4a<br>
+https://github.com/SanShanYouJiu/sanshanblog/commit/4aced68b5b6ef3a8345efd038a89af0ebf5426ba<br>
+https://github.com/SanShanYouJiu/sanshanblog/commit/cb29b43b8c47dd6998badbc8cdea8174af4774fb<br>
+https://github.com/DreamCats/school-bus/commit/aa138b752df9690c9894434a8bb571636f0bf99f<br>
+https://github.com/DreamCats/school-bus/commit/59688473ca7ca44705d89a5281b68833a60953c6<br>
+https://github.com/DreamCats/school-bus/commit/581218563b7d94e9201924a9bcf9673546a5bddf<br>
+https://github.com/DreamCats/school-bus/commit/be891edbfec72d362416b407216b84d8ec149925<br>
+https://github.com/DreamCats/school-bus/commit/cd52a01ca89da1904e99f8b1027b38f92adc3fd3<br>
+https://github.com/DreamCats/school-bus/commit/8b0f5b034ceba56fd78eddab0319fbbc936de2ac<br>
+https://github.com/DreamCats/school-bus/commit/5e0a9c0caa2d5e97e04a0de73a6c91ae90a08048<br>
+https://github.com/itning/shw_server/commit/3952fe0f407a5ce49d603ee1a7fc4bc8934bbee2<br>
+https://github.com/itning/shw_server/commit/7d9369005bd4a4f0bc0384103c3605b6f7cfb360<br>
+https://github.com/itning/shw_server/commit/6bcdfe266f7e053eed9a63a8dc1f3d8e84c68fde<br>
+https://github.com/Advancedpawn2020/sns/commit/32f9e3fef38db87ecef35ac6b1b8f545fff4fd52<br>
+https://github.com/myashchenko/social-network/commit/a69e00820ca03561e253919ae992a26c42d0f852<br>
+https://github.com/myashchenko/social-network/commit/8faf23b9f63aa2321662facebe1869875ccae7c6<br>
+https://github.com/myashchenko/social-network/commit/9731b1a5bd9fc8e171a3824df1ebcd1ba71be3d4<br>
+https://github.com/myashchenko/social-network/commit/2b2f992754fb37aefe03369e1ee68a6fd9039bd4<br>
+https://github.com/myashchenko/social-network/commit/8a115827780d85e74d3741576979713b0d6c2000<br>
+https://github.com/myashchenko/social-network/commit/1e4ba0e7a42d2d0e14473e71191aeac1556763b1<br>
+https://github.com/myashchenko/social-network/commit/2d80b23919e9b7a1e6e20556690726c4471282a2<br>
+https://github.com/myashchenko/social-network/commit/361ba554bcbd009ec45ec2f76177cdd1c67b9c35<br>
+https://github.com/myashchenko/social-network/commit/23f4763ea93272af32345e4bdfeb0cbf4a6c055d<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/76f5117282282c437f60aea4afcc3beddd0b153a<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/b94e4f828b5183bf7e942ea18e747c00f9f28b1b<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/95b91664136535220586d60dd9b9f834979eedb4<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/79b227282024f3c08993a56c3d48ce3cd34ac424<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/49b70c85a547a8d9a6deccdea7763a156dde72e6<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/4664858cf7595964e0dc710f620f9f13d853f5b3<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/e307474fc20655b4514c018daa017203db3f8ee7<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/ca0207e121724dd8dcd349a5d3fba3ad3b7cad8a<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/cf2892a56734cf2918f851486f25fd84da8c77c8<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/d8d42ff6e1dc3c915245ef23127bea8c9f996f16<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/7f879ed0355052584225d8f484ffcf98c5b80c6c<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/1d60322f6091d510c93f0879615d77c708264a34<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/12f55b6e06010652f1a8cb3869e0c0ab612a8686<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/a7a2a12cd636856cbb4cdf787dab2aea53c52a7d<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/4067d342dd7d74614462f82b4df784305642bd40<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/39cf048a0bdf1b3eea28a5f1169788ada43fc279<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/3ca8d256e4ad01911115ca66f9ff86b018689fe6<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/acd1352dc863f327d48466a140c4e870f7370c45<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/b1449977d955d8015ef0e14d50338b923ead2fec<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/bb163004e2f839ef6630e4efd355e4a32ab74ab1<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/679c497aed47a4e4e021a447a85e268c45a71837<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/426b005c5370eccc4b7db6eb91b142770da8334b<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/4f26ae28c3b80a9623bb17eaf8730f563c8771f9<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/34416c9c8499c2cbd4c8abc6ee83d8ce843131df<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/3e72155061c609e99839b1e6d570e2492a22491c<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/62bc94416c6891015eefb58451886cbfb861c9c1<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/9abb780c4d4ca763e223c4c52e91368b636ec92d<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/84fb18eda01d95175adf00dfb2579f6dfe930787<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/3772808fb16761b4ec455c8a0ad56ff998fdc8e9<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/5961b349bcf330b6dedcb93a0ff09f1f0d8e8759<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/81b223bdae6c30a6f1fcabf90dff297a1d7bb9fd<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/8d6098a088c296d487e622f8be825b64d422b42a<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/9e82803bce87368976338edcb5c6e8310e1b3ea8<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/05d3d0285af27f01724ff3740334a41fd06ca77f<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/1ef1d112f6dc350fff1585439e3a72a49b0c3063<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/889642e3862ba25bb3e2a5bca0b4852ede7bbeb4<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/213cac1d759541f6aeae8da44693fd514030496d<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/3d82695f4c048b2bb67aa206f263efd7e90a6f7c<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/67f3253a694b1eb49116a9ddad20e5519dcd4509<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/cc18d92ac942b305a37cc5bd2515fa8e7e204550<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/30c5740ddbff9e6969337bd2385e469b6fb7af33<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/faace137740d7540de0afee0b1568bf616c0540b<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/47e6f2a6d6904b540fc661eda4949a18fc68c5a6<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/0b9110ad64c06667d089bf04231e33a1377b59ec<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/af1e60fb7e1eef17f62fbe892a89cc4112b930a1<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/4c14d2f386677c7bd606a0d17804f8b302291d4b<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/a8da24a3a1691e7510616dfe3544f90cfe4d7fd0<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/074e9333445bb1667bde748222d1e179f90f88cc<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/1ffb8fad74ea546e95c3c62cc42b8d01ac9b5dcf<br>
+https://github.com/ylw-github/taodong-shop/commit/626d01d9557e8989e6faf4522fa276a3bcc823c3<br>
+https://github.com/ylw-github/taodong-shop/commit/7179531a807c32f1fbe15b17759063840052d161<br>
+https://github.com/ylw-github/taodong-shop/commit/b18e61d3130215c1da77849cc94ba33c60149f88<br>
+https://github.com/ylw-github/taodong-shop/commit/37d163384d6bb3042f2ace22da1a82b9819c495b<br>
+https://github.com/ylw-github/taodong-shop/commit/725238a1d0c829ee28cdef0ffe49e5f1c0020a2b<br>
+https://github.com/ylw-github/taodong-shop/commit/be503769cbddd9c9fe7775956035923410e785ab<br>
+https://github.com/ylw-github/taodong-shop/commit/88e6d4f9772a106ee469b8caaa5b79b6df7b55cb<br>
+https://github.com/ylw-github/taodong-shop/commit/23418cc767a6a48911c5b8cd629f01f82a77b364<br>
+https://github.com/ylw-github/taodong-shop/commit/e2b2700c36fdaef2636819743bd2d396ff641911<br>
+https://github.com/FudanSELab/train-ticket/commit/9eb7915f83e8bb34a7112f9605421a807b2f4b6c<br>
+https://github.com/FudanSELab/train-ticket/commit/50016630d488e480db3f982c7a43638322a1ade8<br>
+https://github.com/FudanSELab/train-ticket/commit/566616aa2a3328a554bac11465702900e7fc6021<br>
+https://github.com/FudanSELab/train-ticket/commit/b326d9a310bcc418e370b85c841b7bea917e4743<br>
+https://github.com/jjeanjacques10/twitter-microservices/commit/1f04329ff45a2af4788edaa9748d086782054316<br>
+https://github.com/garystafford/voter-service/commit/2fb2ca2a5b33df0a0c983c5f9a037a78e57ad341<br>
+https://github.com/mikuhuyo/wanxin-p2p/commit/192d092c0ef83efe0b20ce8f2e1e28455b78b3fc<br>
+https://github.com/mikuhuyo/wanxin-p2p/commit/9fe6ef8d59bbca9f81c4667df3529ec6be341065<br>
+https://github.com/mikuhuyo/wanxin-p2p/commit/cebdcff6ad98a295ff69c1104aaa282a33664ea8<br>
+https://github.com/hiejulia/warehouse-microservice/commit/1ba212b9c9b120999d4119f4499a77905dd655f4<br>
+https://github.com/hiejulia/warehouse-microservice/commit/acfea94546a1eadeddc1ad6952bb7d97503e7c5e<br>
+https://github.com/abixen/abixen-platform/commit/6f37f0b3d312f234230e5c70a5c2796aaa827235<br>
+https://github.com/abixen/abixen-platform/commit/d669543e82a6bbc9cf6d34750e000be45a669cbb<br>
+https://github.com/abixen/abixen-platform/commit/bac02ca41e8863b3b4e82124381a61541fa016f2<br>
+https://github.com/abixen/abixen-platform/commit/48926c034210ceb483566b0cd1b042c9f1941faa<br>
+https://github.com/abixen/abixen-platform/commit/5c0d3dfd9255e968667b0943995caf9213e242b0<br>
+https://github.com/abixen/abixen-platform/commit/1b2766ea48010601152c8315767c9d42b64ad34a<br>
+https://github.com/abixen/abixen-platform/commit/f0d30feb478cbeaa37f039404c19664ac01f3833<br>
+https://github.com/abixen/abixen-platform/commit/2c6c2c5dc2c1bc1a62d5844310621df6d99e0bfd<br>
+https://github.com/abixen/abixen-platform/commit/5e6a0434517197a9c4e8fb184a61554e37a387c6<br>
+https://github.com/abixen/abixen-platform/commit/999ca72a1c59869f5a2e0d0503f89444ad8ec34d<br>
+https://github.com/abixen/abixen-platform/commit/e1d4fbf60e3f481e4678d0177631cecdcad7f2be<br>
+https://github.com/abixen/abixen-platform/commit/a7210fd94523268902adb54c11e58e1ab15fae1d<br>
+https://github.com/abixen/abixen-platform/commit/faa297373e466a5ee47ddec9bf4a13bd70fda245<br>
+https://github.com/abixen/abixen-platform/commit/ac352f9c76f434789c9a72b348d7f513ba59c8de<br>
+https://github.com/abixen/abixen-platform/commit/cbbd5da570f6501380fc1a7793685b948fc130c9<br>
+https://github.com/abixen/abixen-platform/commit/7a24c4dcf6644c589e98c28d3fec3c0d779ece79<br>
+https://github.com/abixen/abixen-platform/commit/9ceed6a22fbed033a7019ab035ad61bf291cc4d0<br>
+https://github.com/abixen/abixen-platform/commit/4192c090dc534a5884ef895d747583a11cb77dc4<br>
+https://github.com/abixen/abixen-platform/commit/e6cacd5f7a1f57962232497894687c167d74d4f6<br>
+https://github.com/abixen/abixen-platform/commit/5d7eaf5350a82d1c1e0450546f731d26c46181a3<br>
+https://github.com/abixen/abixen-platform/commit/6f6f7dec1e0361d30b18c084810f1b86044f5c15<br>
+https://github.com/abixen/abixen-platform/commit/13dc9dfe382b2858b20c66793e2d477447463123<br>
+https://github.com/abixen/abixen-platform/commit/f10e69fb780adab18d67b1cebd990ed1bec95873<br>
+https://github.com/abixen/abixen-platform/commit/58be94248229b918ebb4c1c9601ecc9e5b9b1fd8<br>
+https://github.com/abixen/abixen-platform/commit/580c2ce3ddcfb171b3fd45006833a913bd69d7c4<br>
+https://github.com/abixen/abixen-platform/commit/53c58cca87427729ea61a73d0c362b64937aa268<br>
+https://github.com/chaokunyang/microservices-event-sourcing/commit/25494c1a3ddeaf5cd06e9a59880aad1739f764d9<br>
+https://github.com/0xcaffebabe/blb/commit/3ce7a54eb6ab5dcb4543a72da46b10739607b9e9<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/d1bd0f5cb6b09a6fdfa7ad3679b17afa10a0531e<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/85d0307cc13377d76a6c26068cfa3d39cfccb694<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/b08afa2ddb1014dd9b72f1c986d20851b43888eb<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/d981c55bf24458bc526ab9dd941d33e44042aba4<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/1a163fff13514215dcd9d802819e6775c607d362<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/a8d6e857400e088af4c664accd1e2a5159b5836c<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/d1861ddd19393138a6103535b784e3eb7bf8db23<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/209af018a3a35625a1b3f88cbba4ceb899b49709<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/6115c47e28da56bedf8432bea63658da051b87ea<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/1c9e428df431b1781ff6b25c95c0b5eaaf6c0681<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/60a8fb9d01735d68c82a4c5ceadc5b15d63c8301<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/77ff327b0416fd653e969b6e8682be772eb712c6<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/03febc0b3dc07ce332fffaf71a0f88faa41328b9<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/5e38388b6e62904c09bf2406fa42cff532ec03e2<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/4685ba90bb358df1d41520c0d64368bdd5e08733<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/7a789eaf7731922e8126b4b2ced569967c6fef9f<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/7a0df1204fd3e22b4f9c935aabf4c2dbefd14bc8<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/b55e193a83ee729b55f90ce0c3f8c3c0e7f91f76<br>
+https://github.com/stick-i/scblogs/commit/9f732bfe7347d8ffcf6cc7be94fa0d3303ad1118<br>
+https://github.com/stick-i/scblogs/commit/b4192e26734a1ca3b73b4a37e4f8d6091b909cc8<br>
+https://github.com/stick-i/scblogs/commit/6455c52ba60b40796e51507608d2cf0c4767e820<br>
+https://github.com/shuzheng/zheng/commit/a2892a66f3f96b93f65f5a219b8e94545929cbc6<br>
+https://github.com/shuzheng/zheng/commit/9c1c56ccd1f4b8336da82a76e4fa4e44efb38d8e<br>
+https://github.com/shuzheng/zheng/commit/16d8298e1e39473869fcb48e0cdc79696c313371<br>
+https://github.com/shuzheng/zheng/commit/286e402d405dbe20193ca27e751d303390e3bd8d<br>
+https://github.com/shuzheng/zheng/commit/818bfa94991e1ac9637b8719dd3472d59f8cd229<br>
+https://github.com/shuzheng/zheng/commit/b256284570e09b8579167c4a364f7383d1346a1f<br>
+https://github.com/shuzheng/zheng/commit/849448068b3b571cdedbe544611221737a204783<br>
+https://github.com/shuzheng/zheng/commit/167251bb459ea039c00681a0c437ed737b567973<br>
+https://github.com/shuzheng/zheng/commit/a672de4a43214ce045187e74546792fba3aa9a80<br>
+              </td>
+          </tr>
+      </table>
+      
+      
+<h3 id="Service communication and coordination">Service communication and coordination</h3>
+      <table border="1">
+    <tr>
+        <td id="links-cell-2">
+https://github.com/xcyeye/aurora-blog/commit/09822252c06e38a636ca57ab618fc0ce1e5e0280<br>
+https://github.com/xcyeye/aurora-blog/commit/77fb27c1033b0c1f87fe16cdd8dce0fa118a16c5<br>
+https://github.com/xcyeye/aurora-blog/commit/96a8941561361d43130d8569afe018704a51baca<br>
+https://github.com/xcyeye/aurora-blog/commit/c8f560e0002ccca9fad0dff98ee15babd916ce40<br>
+https://github.com/xcyeye/aurora-blog/commit/c95322e0fc5cf33fd2ecbef0f980d38121f01280<br>
+https://github.com/xcyeye/aurora-blog/commit/444a97fe7070be5769adf95afe866bb922ecf059<br>
+https://github.com/maliangnansheng/bbs-springboot/commit/34862be6eb2e850346e21111485c764622f3bfe9<br>
+https://github.com/lizibin/black-shop/commit/93bc87939541476af3e6d692a8b8927429d9eab5<br>
+https://github.com/lizibin/black-shop/commit/c3bea60785e0573f4f5b0e5696423240c588ab63<br>
+https://github.com/devdcores/BookStoreApp-Distributed-Application/commit/77cd1e446caf433843e1ccef525423a4fdbefb6a<br>
+https://github.com/devdcores/BookStoreApp-Distributed-Application/commit/2561775582b4bb192dbe2efb497d0e55dc6b86fb<br>
+https://github.com/nageoffer/congomall/commit/5b8f609790d3d3d73d58647a9aca1525d1e2c498<br>
+https://github.com/nageoffer/congomall/commit/db5835b7e2f901821c21845514d65dfd9929c249<br>
+https://github.com/nageoffer/congomall/commit/0c52c29ed32bb22634475d967ff3236338481d9a<br>
+https://github.com/nageoffer/congomall/commit/e423e70581bda3707a6c59a939032b0f2b65efeb<br>
+https://github.com/nageoffer/congomall/commit/c6e3587508be1b7af9ae08636246727af186fd83<br>
+https://github.com/nageoffer/congomall/commit/f501961c10d4443646f6c844985564e2816bb763<br>
+https://github.com/nageoffer/congomall/commit/37f9e73124d14ecec8871a2139251b07b15210f3<br>
+https://github.com/nageoffer/congomall/commit/d2ee259f3b39d06b5f64731b6474b7eaaa582155<br>
+https://github.com/nageoffer/congomall/commit/67ed01862bcafe6a8b5e687956e45d898842c909<br>
+https://github.com/nageoffer/congomall/commit/bbdce99154dafeb1b13cc1e825e682ff4bf56ab3<br>
+https://github.com/nageoffer/congomall/commit/59d1d447671ab377237283ebe41b715b5ddf0365<br>
+https://github.com/nageoffer/congomall/commit/2cee257d3af3e7e4a7806bbc34e9b394d2e15a96<br>
+https://github.com/GyalbuSherpa5/ecommerceMicroService/commit/afa902d8205628dd8ef6ca71b930c6a19f3989b9<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/d8be90b4231ecf293117805f67c9d8db5253b463<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/4190487ef3fa3bf7226215c3c5b11204b10fa061<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/f7bef498bdd6b66608927b33e7e1a9bcfc595b48<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/80246656c16b9f70282cb5613f1df4ac4fde93bb<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/73eead662413025f525609f268ebe54681ace6fd<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/9ee4e469bb5bd9563b4e803dcf7f49354f2b3e9b<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/7683cd400dba26a3a4e1d0fec1a5424071016230<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/5aba747a6f3588b47b60df7d46c4b7dec682f833<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/657c1798f6ab58742b132c96b4f94946fdf440c0<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/8ffb6d843b583dfc9ad2f3e05c7641b5bdc033a2<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/e59807178cde76cdea96e2463f76c002c74260ef<br>
+https://github.com/lmxdawn/exchange/commit/acf3746d926b9150f6c9ec85c0ad49bf5206de07<br>
+https://github.com/lmxdawn/exchange/commit/25a0a51831eaf64e49fcda7e70eea8d2c8dfb622<br>
+https://github.com/lmxdawn/exchange/commit/c5b0d89b4019e4ed50ed44e284557cf772f9347f<br>
+https://github.com/JavatoDev-com/internet-banking-concept-microservices/commit/0666ba3156bc4f1eb9ee307892601b13ae7b6c2b<br>
+https://github.com/JavatoDev-com/internet-banking-concept-microservices/commit/210ab1233e1ba98b63c4fed4810aa809ab9a9f70<br>
+https://github.com/JavatoDev-com/internet-banking-concept-microservices/commit/4a32d818f6c335c90526eabf48fb9094340c8a8a<br>
+https://github.com/HMingR/irh/commit/7593f218f1ad1bea1be34274b6bbe70cba2c2307<br>
+https://github.com/HMingR/irh/commit/5486efaab06f4ff2f7159c14c5cbfd7ccdd4667c<br>
+https://github.com/HMingR/irh/commit/d0aa2c8fe80befd4f9dc1cdd80d3ddf43ebe6997<br>
+https://github.com/Durancer/JMU-Campus/commit/15cb6f3c997702ca1d1a2aee8728b0cf87a9f026<br>
+https://github.com/Durancer/JMU-Campus/commit/a849928b51b475b9103b69993ac24f805525ed3e<br>
+https://github.com/Durancer/JMU-Campus/commit/17fe666ff85bef6d14b7ae1342ad716b973edd3d<br>
+https://github.com/Durancer/JMU-Campus/commit/b92872dedaa701bade0d00a97c49d2f7375dabde<br>
+https://github.com/Durancer/JMU-Campus/commit/59b18ce8f2d3a2031f24961ac0b96be9a05f4502<br>
+https://github.com/Durancer/JMU-Campus/commit/a5e75c78ac0eff1244fb006b2411fa78ccb92e44<br>
+https://github.com/Durancer/JMU-Campus/commit/33068e9066697e0edf98ec730dc32f97d94cab5b<br>
+https://github.com/Durancer/JMU-Campus/commit/99dc3b730ca1f7945b257def3d1add8d45bb9bf0<br>
+https://github.com/Durancer/JMU-Campus/commit/3101b485d4e91a8b915a3bfa28fbf2009b61c4fa<br>
+https://github.com/Durancer/JMU-Campus/commit/27f2a677790f2742fc617a2f359380a4c50a51b3<br>
+https://github.com/Zealon159/light-reading-cloud/commit/5e3fe0510e91e12eb33bf93fb2da70fe191c7507<br>
+https://github.com/stalary/microservice-recruit/commit/5012f05f35fc74303d3ec39cff051ec8ad145b9f<br>
+https://github.com/imrenagi/microservice-skeleton/commit/2a4cba043104cb468bae79e02e30fe1e53c84398<br>
+https://github.com/dodudo/msns/commit/f13ef8905b11413a973395f20402df8c05355da2<br>
+https://github.com/quhailong/NetworkDisk_Storage/commit/fff036ec3f2a0161b7835d7676724e453f0bc4ec<br>
+https://github.com/qa-guru/niffler/commit/ad5056bd18c00211e9b0a88a58dd3abe3ca1f898<br>
+https://github.com/qa-guru/niffler/commit/9ad1dd7acecbc2ce7e6c9c375440866d43bb47d1<br>
+https://github.com/qa-guru/niffler/commit/65a137bf0a77fe3f028b7ef70da57aa15c498ebb<br>
+https://github.com/paascloud/paascloud-master/commit/d81cad649ef78dcd2c980c37b2d00a92048e514f<br>
+https://github.com/JoeCao/qbike/commit/14eb01c4c0f35459136b88b36e9276298c1d2c48<br>
+https://github.com/dongjuntao/readygo-mall-cloud/commit/898817b1e58c42373715187473872c59c00104b0<br>
+https://github.com/dongjuntao/readygo-mall-cloud/commit/6eb282f411bd8ebce778f3ff4de80ad9765e616f<br>
+https://github.com/dongjuntao/readygo-mall-cloud/commit/ad15196c5d85d6ef34b7c30340452ade9074d813<br>
+https://github.com/dongjuntao/readygo-mall-cloud/commit/fc507a286d5d3aa5cdfdec78360c18ce7b1ac8a9<br>
+https://github.com/MuhammetTahaDemiryol/rentacar-microservice/commit/bf9311b8ecd52a115bc00447bc995deea96f8824<br>
+https://github.com/MuhammetTahaDemiryol/rentacar-microservice/commit/91b9ea39f1cfd557c7b8d3f3ef0a3e7f8558395f<br>
+https://github.com/MuhammetTahaDemiryol/rentacar-microservice/commit/26e0140729b16b153787ac629ac47ce49f115065<br>
+https://github.com/MuhammetTahaDemiryol/rentacar-microservice/commit/c939a2a33b804009823cbbc56724a2e51eb9d0b7<br>
+https://github.com/andresrodriguez55/rent-a-car-microservices/commit/a0d70e35e7682093f5e69ebff5cafaee978ed2bd<br>
+https://github.com/andresrodriguez55/rent-a-car-microservices/commit/ea1bdb35be50dcc3ec33d1229736ae5353109dcd<br>
+https://github.com/zoltanvin/royal-reserve-bank/commit/4a5d4a5dfab14935db0e945c852bcac3890eeed1<br>
+https://github.com/DreamCats/school-bus/commit/6ffebc6d02958c46babd017a438961b28ad3a1c9<br>
+https://github.com/DreamCats/school-bus/commit/4d505ec5f30fece38e0c90bfd694dfb7fee2adb3<br>
+https://github.com/DreamCats/school-bus/commit/dc4dcc4f48fb45f2a8bfdaf74b11d49befdcfb0c<br>
+https://github.com/DreamCats/school-bus/commit/b077e559b2105ebf1d906aabadb73db27df772e1<br>
+https://github.com/DreamCats/school-bus/commit/4dec7f771a2e5b2b4ba06117b25c467134d269c4<br>
+https://github.com/DreamCats/school-bus/commit/15541669494c317c9f51aabc7633d0461c3e9cbd<br>
+https://github.com/DreamCats/school-bus/commit/ce311827f09fa8ffbf0a8743d5409f5847d53651<br>
+https://github.com/DreamCats/school-bus/commit/91646fec773dbe624204f511766f6239bd4df550<br>
+https://github.com/ShikGeng/shik/commit/50b5a45fe1f98efc014ad35cd14bf74674edfa4c<br>
+https://github.com/ShikGeng/shik/commit/0ee1462568dcf6ec26ddcbe61ec74c162aa4c86b<br>
+https://github.com/ShikGeng/shik/commit/9ef6326aef79bdfee4d21769fb80d4e47e402d86<br>
+https://github.com/ShikGeng/shik/commit/b164d7a2a761287d7404245b8f9d421a85c4025a<br>
+https://github.com/ShikGeng/shik/commit/c68fca623a20bd611c5ba53c42df6e6372b67e1f<br>
+https://github.com/ShikGeng/shik/commit/b2b995af05f35c93b26372d455e374cffefe48c4<br>
+https://github.com/ShikGeng/shik/commit/16967eb53b3d3857fdf1a81621316091a010fab4<br>
+https://github.com/ShikGeng/shik/commit/6a405059a100af3cbc7df180d320f61aeb1c8e09<br>
+https://github.com/ShikGeng/shik/commit/98a89163570baeee4b9920520008f0eb54ab8b2a<br>
+https://github.com/ShikGeng/shik/commit/1fc4e16853e62a989306a574800f203e81b2ee42<br>
+https://github.com/ShikGeng/shik/commit/ba5ed8032693032d822072d87231803e43ec5259<br>
+https://github.com/ShikGeng/shik/commit/5c64ea6df9f6ef5c26beb478d30ecdc8586e60d5<br>
+https://github.com/Advancedpawn2020/sns/commit/51f42e6aafc627621754e6b9d1ce7b29bb779e9b<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/8ad908602926b5a0d732f7154c14b92dba7e7d0b<br>
+https://github.com/hnjaman/spring-boot-microservices/commit/cf647855c9aa8be801816c8b651335d44e5ca2b4<br>
+https://github.com/hnjaman/spring-boot-microservices/commit/db46ed8579bfd115757fa5e38b023d6f1dfef971<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/03babd026cfda7069297274d4e6a75cc523aebb0<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/35a4f76eaf2b46363969f1239e4155ddf120beb8<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/8053fbba591521e78fe8151ce6e5cf18bb59f697<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/708bb9604bd74869aaf11102620926cb392666f6<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/3235cba79ec1a76032c6122b1d9c9ee0ac148182<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/36f35570c2aa7f22debf32f592c741cf23d98889<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/3bf73a8397f3ee158428217420adee488e127f33<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/81d03f46d508ceb308c9145010dd530b501a4fa3<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/993580b9f62b40f26c31662016ac44d01a7ded8d<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/279f765861b33d41c8c7a087ba8564d97a76241f<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/24a3fbec4f058e71a830e9dcc621a38cd86fbb77<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/eb87961fcb7d0fb9ead822b821883a2f5c4d5d8a<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/3f425a3c9e056d7920c8378ed5ff5b9c4f13b419<br>
+https://github.com/ylw-github/taodong-shop/commit/52553aa6fe8b34ff162a1fb33e8f58494b4d2c3f<br>
+https://github.com/ylw-github/taodong-shop/commit/5877efc856e091e56715a02fed4808598c395e42<br>
+https://github.com/FudanSELab/train-ticket/commit/30ba6c435cb2fb605586e61c20fb6c9fafc728cb<br>
+https://github.com/FudanSELab/train-ticket/commit/c93465e7f082482d56719021b408eb41481f4194<br>
+https://github.com/FudanSELab/train-ticket/commit/d48c1bdab67c77cf2644193d4ee4475d14cf8801<br>
+https://github.com/garystafford/voter-service/commit/ef535da248fae87e43dc01e468dee3e486a742b6<br>
+https://github.com/garystafford/voter-service/commit/aa50c033e230a52372a7e9e4802f91d90a78e719<br>
+https://github.com/garystafford/voter-service/commit/dcbde30d1630765743dabe55145f5697bfe00c80<br>
+https://github.com/garystafford/voter-service/commit/1094713eeb9c8665a10de98233cac4642a50b635<br>
+https://github.com/garystafford/voter-service/commit/e548bbe3d405091ee958227928e1d2f3b709bb66<br>
+https://github.com/garystafford/voter-service/commit/0d28e3e831dd2b73702e6390632a918fdd84ed0b<br>
+https://github.com/garystafford/voter-service/commit/bb30dbb2feacf2f61f1afd03d9476798c7d0bd89<br>
+https://github.com/garystafford/voter-service/commit/2d4f2a1da97de64c18895bd09b53809d1653d8ef<br>
+https://github.com/mikuhuyo/wanxin-p2p/commit/5d9c96b2ee729a03045cf7b3ab6f0187fdd2ba76<br>
+https://github.com/mikuhuyo/wanxin-p2p/commit/b3ebb99d773f8b722cef20dc9b3f8176b61bdffd<br>
+https://github.com/mikuhuyo/wanxin-p2p/commit/6c8f376437383fdabb646172e943058f64a33640<br>
+https://github.com/mikuhuyo/wanxin-p2p/commit/e88b0295fccbbf03be6b6f472ebb265fc12e306e<br>
+https://github.com/mikuhuyo/wanxin-p2p/commit/2861fc2efaae9a7d433420d3cf4e025f5e9c22ea<br>
+https://github.com/mikuhuyo/wanxin-p2p/commit/daea292529cada7d26027ee92ac4fb6d5621c357<br>
+https://github.com/abixen/abixen-platform/commit/8b20397b50bc167d3b17e30c3a6871a021264242<br>
+https://github.com/0xcaffebabe/blb/commit/116cb7f4c459d7aad2d504fa78fce21822d52cdc<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/d9c3f23d3d5d7c4524fa4d76c3cff55fc24b56a4<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/56d12ef6f279c3c189958c5d8851cd71ebb9addf<br>
+https://github.com/stick-i/scblogs/commit/97570c2a7d11faa0a7d933f28d9952c2dc46720e<br>
+https://github.com/stick-i/scblogs/commit/6ea226d0b87741589426f2765c83726b3048471d<br>
+https://github.com/stick-i/scblogs/commit/452892701d0bd3e9222cfaa12a642199af34b6b5<br>
+https://github.com/stick-i/scblogs/commit/8d01cd766325eb77ee6f6629f9a7b1797b3ecdee<br>
+https://github.com/stick-i/scblogs/commit/331f2fe1f72bf5293a3c3fcaa276dfeb88f80312<br>
+https://github.com/stick-i/scblogs/commit/50cbc48e2a61cd546a67a9f4fff2348dd9d10fa6<br>
+https://github.com/stick-i/scblogs/commit/b064952382c20b8753639860784b16ef3277a550<br>
+https://github.com/stick-i/scblogs/commit/b8ea3774251094cdedd531d3a2303fe1902edead<br>
+https://github.com/shuzheng/zheng/commit/bd91ce53bea0f800a3a52b54adc8b8ecae147500<br>
+https://github.com/shuzheng/zheng/commit/994bd23c166a960c2e55d883c6ab668b30efbf1b<br>
+https://github.com/shuzheng/zheng/commit/a646121b1a62b3e4cf32ede21a329068d5465c6b<br>
+https://github.com/shuzheng/zheng/commit/e91dd3a8a69651a348511601a0b41735fc67b2ee<br>
+https://github.com/shuzheng/zheng/commit/75321645dd69f490025c976c4355ae45e68499b6<br>
+https://github.com/shuzheng/zheng/commit/39565f716f9806561a8d08514902cc30b3e97086<br>
+https://github.com/shuzheng/zheng/commit/21b96ff84f885c463455a12e089de515b8f80ae0<br>
+https://github.com/shuzheng/zheng/commit/963abaef6109d2b57e829cf630cc36947b90401e<br>
+https://github.com/shuzheng/zheng/commit/be1d583313b9a515e3f9d43147e62d882740e35d<br>
+https://github.com/shuzheng/zheng/commit/0ba10eeea85d7e2f2c4aecd628dc791f64227b7a<br>
+https://github.com/shuzheng/zheng/commit/33578337e81d18175438491b0b29f34f960e31ac<br>
+https://github.com/shuzheng/zheng/commit/e437392ff9a226d56c8947adcdbca7be3d5e3359<br>
+https://github.com/shuzheng/zheng/commit/1b0f47f4679fab8e1eb4e5cbe9f142da50895d42<br>
+https://github.com/xcyeye/aurora-blog/commit/6418e36f289326ef91798f756fb5912b7281e286<br>
+https://github.com/xcyeye/aurora-blog/commit/71104a3bdc7c865f0b94b69a8c2312d3d2214ee4<br>
+https://github.com/xcyeye/aurora-blog/commit/e6bd2e3891f146deb9ab374fe830ea6eab0b1b84<br>
+https://github.com/xcyeye/aurora-blog/commit/8b2357237c69e5be986bf88bbe7ccff21afd9ab4<br>
+https://github.com/xcyeye/aurora-blog/commit/f571fbcdf61f87924336f7248fb74e50e8ed8ab2<br>
+https://github.com/xcyeye/aurora-blog/commit/8922fa9bccda7cceb569d3bb4093419130021f93<br>
+https://github.com/lizibin/black-shop/commit/95e0330d8781261708a1fe5acdb6709a0592fc79<br>
+https://github.com/nageoffer/congomall/commit/323e72cf0e9c951c9eafb2117625ab1f4328361e<br>
+https://github.com/nageoffer/congomall/commit/73422e7d46b945111f549da563655ffc72aefcd2<br>
+https://github.com/nageoffer/congomall/commit/e8fe3b486ae93ed0773d7ef1ddf64ac8a9abb0c6<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/22c503dea51146345e40d9ab5b73e46b72b85644<br>
+https://github.com/Durancer/JMU-Campus/commit/9275c17c16559202a693c3a5aeb5247ccd911de3<br>
+https://github.com/Durancer/JMU-Campus/commit/cb7d9beefc67a4b300cd290bf4b77c7747aec5a0<br>
+https://github.com/imrenagi/microservice-skeleton/commit/8f94abad1bdd97bf164c5f9e8e1c71bdd2fcfb03<br>
+https://github.com/quhailong/NetworkDisk_Storage/commit/7348d0724f70dfd000fa9063713c87f4fc4be189<br>
+https://github.com/quhailong/NetworkDisk_Storage/commit/490be0046464867b0d6848c6cbd0208bae557e9d<br>
+https://github.com/andresrodriguez55/rent-a-car-microservices/commit/854a8281ef685f6ec5ac648445a96fbc7383f3af<br>
+https://github.com/andresrodriguez55/rent-a-car-microservices/commit/19c9a138d90f3fb193ee5eac18061f9c872e0596<br>
+https://github.com/mikuhuyo/wanxin-p2p/commit/8adaaf91e73b2f3a4a86a749fc7d610b2104709f<br>
+https://github.com/mikuhuyo/wanxin-p2p/commit/6abed11db91d1c21b07e13fb30acc5fc04a8f36b<br>
+https://github.com/abixen/abixen-platform/commit/705710ff573e84be35db1853b941b1b4c420b55e<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/0aca36ee9480ccf5690d2d51ba4d41efa67fc086<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/ae4dd42dd23ee6b457416325c152a751a7b5cd64<br>
+        </td>
+    </tr>
+</table>
+
+<h3 id="Containers and orchestration">Containers and orchestration</h3>
+<table border="1" >
+    <tr >
+        <td id="links-cell-3">
+https://github.com/xcyeye/aurora-blog/commit/f249663b6da6af9faaacbab06cfa43111deb5274<br>
+https://github.com/lizibin/black-shop/commit/a825a2c626f94c64576c12f2cb9278506f362953<br>
+https://github.com/lizibin/black-shop/commit/4c20516f41596a33300ea065d470e86a1cf21025<br>
+https://github.com/nageoffer/congomall/commit/35cab47ecc0cd54cff1ec19e041843e7875d08d9<br>
+https://github.com/nageoffer/congomall/commit/b3ca0a4dc6be487cd08a7d1cadef9eedd7a66c97<br>
+https://github.com/nageoffer/congomall/commit/9a245151569f75cb616e9f4b55c0843d13943275<br>
+https://github.com/nageoffer/congomall/commit/a272cb2eaf733a643f68719e9c1c058dee6372c6<br>
+https://github.com/nageoffer/congomall/commit/93822ab0a5fbcaa0ca5c06ccdf969efe21284248<br>
+https://github.com/nageoffer/congomall/commit/f52cef05e7f8557ba441749088785304c890fa24<br>
+https://github.com/nageoffer/congomall/commit/19e03235e336ff769fd78291dd534df53ed2d2fc<br>
+https://github.com/nageoffer/congomall/commit/19ed4b431ff218b18a3d4a8eba5ca5ab65b6df8e<br>
+https://github.com/nageoffer/congomall/commit/42fda4e1c22e6b128b0377d4b7437111fbe3dd98<br>
+https://github.com/nageoffer/congomall/commit/a103bf5b42cd784ecea16def5cb85651e34e1889<br>
+https://github.com/nageoffer/congomall/commit/902b844942b48187e222266b75e8578db7b059c9<br>
+https://github.com/nageoffer/congomall/commit/10383678a48b580705f4ee00694df10c05777159<br>
+https://github.com/nageoffer/congomall/commit/fb79609232c32fadfc70ad265fb00a799094cf19<br>
+https://github.com/nageoffer/congomall/commit/e9276d1868e90ee85973f2b333ec61c8c8b360a1<br>
+https://github.com/nageoffer/congomall/commit/fbc7be1078ff4ae2c6c0bbc4f65357a05b3ef16c<br>
+https://github.com/GyalbuSherpa5/ecommerceMicroService/commit/2f052c55454dcd05b8865b8db56c00ed2822465b<br>
+https://github.com/RainbowForest/e-commerce-microservices/commit/d75574de0fe4960776f4dc824bcf36ce70125e57<br>
+https://github.com/RainbowForest/e-commerce-microservices/commit/692712f6499dca21adfadde43e61d366c3f690cc<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/9bfd2e97258a6fec2e6f9b535a367e76cec32ec5<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/df0f037ec76bb7ef22983f63b7a0a2b502e8adaf<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/ad73e34d763b609d6d3917f5fe700844894fc9de<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/efc1aa07ca3a00efe110c6778c5f141edda7df6d<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/6cc67e617ace09f87943315dd433f35fea30a2c3<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/a19f1c303a69cae5d7b121eb2b6ffab9cbd67c6c<br>
+https://github.com/eventuate-tram/eventuate-tram-sagas-examples-customers-and-orders/commit/a3ebd524e26831617c53a8958d36ca78565eac9c<br>
+https://github.com/eventuate-tram/eventuate-tram-sagas-examples-customers-and-orders/commit/c240ffa20e33654f8c4c5325d0f0efa934f54eaa<br>
+https://github.com/eventuate-tram/eventuate-tram-sagas-examples-customers-and-orders/commit/14a27f228b1d7216abe8227f3c7ecd748241c65a<br>
+https://github.com/eventuate-tram/eventuate-tram-sagas-examples-customers-and-orders/commit/423239af8eb223d427a933afd80a0cd5fadd8433<br>
+https://github.com/lmxdawn/exchange/commit/7981df37c4e6b3c2b0977a160f5ba3b4bdd98848<br>
+https://github.com/JavatoDev-com/internet-banking-concept-microservices/commit/1e7887864f40fa7db010e2c9091df016e8da35b7<br>
+https://github.com/Blucezhang/micro-server-own/commit/9ae4054c9d83dbe1e57a62819771dc551effc053<br>
+https://github.com/imrenagi/microservice-skeleton/commit/0293575d68410565c033da5d5361178605b8776b<br>
+https://github.com/imrenagi/microservice-skeleton/commit/63c2dcf72275d33ef915cdcaa32cf8d5a0b49104<br>
+https://github.com/imrenagi/microservice-skeleton/commit/ec93e25c9ec545a66f8a9883b09f75927101c987<br>
+https://github.com/imrenagi/microservice-skeleton/commit/082e2ad21fdaa66b5b349f029e7caa7c24c704ee<br>
+https://github.com/imrenagi/microservice-skeleton/commit/46977a9b52b66a0c14f936c21d60bfbd4b700d67<br>
+https://github.com/imrenagi/microservice-skeleton/commit/d753091df454de5d9c844df454df9ed1f28eb7fd<br>
+https://github.com/imrenagi/microservice-skeleton/commit/2676864dc7df9ef98e650dc7de0995d479ab6e53<br>
+https://github.com/qa-guru/niffler/commit/8cd695175110fb94621ee7c16188cd19a32b8c0a<br>
+https://github.com/qa-guru/niffler/commit/7bc7324fd9931c23201436343fb0be60baa1c9cb<br>
+https://github.com/qa-guru/niffler/commit/04571a46de4c49fe1fc8c08206b2453040f20519<br>
+https://github.com/qa-guru/niffler/commit/f585d8b71ae2dd2865f93493c68592579be4324c<br>
+https://github.com/qa-guru/niffler/commit/e71d1c977960257835e80edd9f912d2ad69a8582<br>
+https://github.com/qa-guru/niffler/commit/b8592b0042ae7c4f549c1d03a88af198cb43b031<br>
+https://github.com/qa-guru/niffler/commit/16058a9619e8887623203885d84400ea52a915dd<br>
+https://github.com/qa-guru/niffler/commit/9bce977e43cfecd6526be04d59b3bc665701db6f<br>
+https://github.com/qa-guru/niffler/commit/dde3404fa416a70f5d1adca60d68590beb495fb9<br>
+https://github.com/qa-guru/niffler/commit/e4346703f2fe0b780d0ea84cf98bcb0be3a48e0e<br>
+https://github.com/qa-guru/niffler/commit/d397276c910a9eedb8d0517ec13d71f5810f8b6d<br>
+https://github.com/qa-guru/niffler/commit/0773e71ee3ed9a452c115735660bc04f63581e37<br>
+https://github.com/qa-guru/niffler/commit/c0ea2859929b872200992faf0ca394526c9d2b1c<br>
+https://github.com/qa-guru/niffler/commit/01f495c3bf3499e218055c7ebc605260b9c958e4<br>
+https://github.com/qa-guru/niffler/commit/727b8df9f270509221fbe24634f126cb1873d140<br>
+https://github.com/qa-guru/niffler/commit/85ee7dd9b5859a3a633b79ecfabd71584bac5ff8<br>
+https://github.com/qa-guru/niffler/commit/2eb9bccd4b515c97bd83796dbd4a10295cb64ffa<br>
+https://github.com/qa-guru/niffler/commit/c8deb3ecd912f8d4d8d958207de0732806ebb914<br>
+https://github.com/qa-guru/niffler/commit/1a80aa49fd942514098feb925fa26d1918d12f8a<br>
+https://github.com/qa-guru/niffler/commit/290862c11464c75110a16a01bc8ea46bae635ac6<br>
+https://github.com/qa-guru/niffler/commit/f36d78483047fe15c2f11c196e44fbfe3545008f<br>
+https://github.com/JoeCao/qbike/commit/153cf1acfdfbee642ca08eb581f01739682e919e<br>
+https://github.com/zoltanvin/royal-reserve-bank/commit/7879e877a4d19dbfcd742e79cde935e6e4572b85<br>
+https://github.com/DreamCats/school-bus/commit/a7acc7e0de05bc16f457cd8433d1d3ca98b7a1c0<br>
+https://github.com/DreamCats/school-bus/commit/d6d2c47f095c5468397cb2491927ef7adf6b20be<br>
+https://github.com/DreamCats/school-bus/commit/efd2c1dae600ae37953eaef70da337d5082a8077<br>
+https://github.com/DreamCats/school-bus/commit/fbbf8647920836e8b2877e30256ba760a5a9ce9a<br>
+https://github.com/DreamCats/school-bus/commit/45b84ca433fef0b74be5a5718985775ef7aa1764<br>
+https://github.com/DreamCats/school-bus/commit/af5d099666ccece4c88d573d998c181257b7d59a<br>
+https://github.com/DreamCats/school-bus/commit/3a2fe62bbb29214f3fb62b25e96bb93d458a91ab<br>
+https://github.com/DreamCats/school-bus/commit/ca486f1833eca0401a56918b6bdd39e7135d8191<br>
+https://github.com/ShikGeng/shik/commit/47579da63351b2f921eb7ba2b31196e936ba4304<br>
+https://github.com/ShikGeng/shik/commit/3c5c1668aabd7e7801c1c65e63cb858d6053b15b<br>
+https://github.com/itning/shw_server/commit/9644ca9c8caa10c67fe2437e1839a88411c7e9d0<br>
+https://github.com/itning/shw_server/commit/23e4e40f9918e15b9a725b0bb63d7f5ee29e4530<br>
+https://github.com/myashchenko/social-network/commit/59b5acbba209e5d3dcc321e8910ba43f34b2e623<br>
+https://github.com/myashchenko/social-network/commit/6a7bcff23b56d3e2e5fafe99594fb1237f136e60<br>
+https://github.com/myashchenko/social-network/commit/a7ce46bc98797c50b0f5943f03555ad950d3e2c4<br>
+https://github.com/myashchenko/social-network/commit/4b4750a406b2df0931a45858fd0f3f90d9389d5e<br>
+https://github.com/myashchenko/social-network/commit/ae846553a62be5fa3f712710a18c80cd36936d00<br>
+https://github.com/myashchenko/social-network/commit/d1c215a21aab06f61527b556aecccefda872d13a<br>
+https://github.com/myashchenko/social-network/commit/81cf26cd524fcc300637d22cfeb9f6ad85c7dd86<br>
+https://github.com/myashchenko/social-network/commit/676014d924a58ebf993d2afd5ed75ead02125283<br>
+https://github.com/myashchenko/social-network/commit/e446b76ad19891372c8e5bb1053cb178b79554cf<br>
+https://github.com/myashchenko/social-network/commit/4ba3fcd80996db48838971fab798513ab8008d1e<br>
+https://github.com/myashchenko/social-network/commit/5169f1bc5969da0256d2ea6b945a5219d1257a95<br>
+https://github.com/myashchenko/social-network/commit/7d170c6ba5cf3f4e670460d409afd5f219d83536<br>
+https://github.com/myashchenko/social-network/commit/6cc2f87575851e1efc79b0517a7fc8533d4afa92<br>
+https://github.com/myashchenko/social-network/commit/9977caa76e14ac4912636d7a3267816169fb2938<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/a0d4d6f1eaa61dc0124af144adebf08f40ba3d4a<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/4272e1df831a89d5cd82978bc1242e85d232382a<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/5c47387fef5eaf843d30eca97b54fc5ec55ece01<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/41f9ea88bf3e9df3bc5cfc4ac93e25d609eda74a<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/e2ac6b4411fa44ae8ee73afad740694174ea17d2<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/3429bb582244acc9f9f0606acfba188799cfa6e0<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/e511e588ff1288d75fdf117f1c4965dfcc36ad01<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/219369b9235e432fe1df79bb0c760d19765c7d5b<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/7e3b9cb99b141c37c310303722c75e2829301ccd<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/e6ab8968b082512283fe42812ba8ab924c7e0f71<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/36ea451ee7d362423464991169f5300357aaaa0b<br>
+https://github.com/ylw-github/taodong-shop/commit/c223de59d96c54bb6e46bc5e6e532ec09ea12eef<br>
+https://github.com/FudanSELab/train-ticket/commit/15ae5c4102caccc6e6f84bce647cce1dcf4ad77a<br>
+https://github.com/FudanSELab/train-ticket/commit/2fe2dd072c0b9625634732e8aed5b8cbb972cbf3<br>
+https://github.com/FudanSELab/train-ticket/commit/545bd18c9d271680771b0e2eb3fb478690c653c6<br>
+https://github.com/FudanSELab/train-ticket/commit/0703065fc9c09b0853ae1c72fcfc9999f11a3252<br>
+https://github.com/FudanSELab/train-ticket/commit/97a90f003d7911c6cc09fb3534faf762c9950d57<br>
+https://github.com/FudanSELab/train-ticket/commit/561b2a6a6f41dd5c445c07327b1a2eebb42a2bd3<br>
+https://github.com/FudanSELab/train-ticket/commit/fa8acc16428cc4aee24e2c1eb8dbea4c747d0c0c<br>
+https://github.com/FudanSELab/train-ticket/commit/77b2863ae39a5f9e2eedf5bd5f58beb97a6e09d0<br>
+https://github.com/FudanSELab/train-ticket/commit/137094f2f64062a8e8a974fac24842d457ca1cb5<br>
+https://github.com/FudanSELab/train-ticket/commit/83336a407682e95ecf6e892163afca0687f44329<br>
+https://github.com/garystafford/voter-service/commit/e23886ed684bf676dc7f0287a563ff30f0f677de<br>
+https://github.com/garystafford/voter-service/commit/333e20dbcbd9e7ec0b82677d773fb8ea38511054<br>
+https://github.com/garystafford/voter-service/commit/042964ccdfdf79e21c7c14c1171738665d8412b5<br>
+https://github.com/garystafford/voter-service/commit/48ce2695f6657f9a6ee9312e0da1370eed6f66d1<br>
+https://github.com/garystafford/voter-service/commit/1fad1740cbd5555b381c605f87b5145d385e78b9<br>
+https://github.com/garystafford/voter-service/commit/15feafb1f961e1c9d74673ab932eec0ce517957c<br>
+https://github.com/garystafford/voter-service/commit/bbfcc578132ab02ae2d363b9aec13823933d1361<br>
+https://github.com/garystafford/voter-service/commit/2184a0630b46834acaf15cb207776cab3da35b7b<br>
+https://github.com/garystafford/voter-service/commit/b9ef4d9fb5b64c8bdb575289347fbe4b516fbd6b<br>
+https://github.com/garystafford/voter-service/commit/b89ba18d4d4633a1c6082e360211e8430719bce5<br>
+https://github.com/garystafford/voter-service/commit/fcdb4e03e666c397d6cd62203c455f7aa21e4b05<br>
+https://github.com/garystafford/voter-service/commit/088e8de7606e7a3f8a55b50efde5fc01a84a879d<br>
+https://github.com/garystafford/voter-service/commit/dd8da03976d26e51c4659aa0b3f403365a1d4901<br>
+https://github.com/garystafford/voter-service/commit/c2e3e0eb97d93103b7a8a745b5cfc4b50878d452<br>
+https://github.com/garystafford/voter-service/commit/4ab18cb7a7ad8814724ab342f2df02af7a517fc9<br>
+https://github.com/garystafford/voter-service/commit/b3ee2f99e8f047f31dd76ba26ca000670acce695<br>
+https://github.com/abixen/abixen-platform/commit/176afadb30d60278daacd1b6497753d100084e78<br>
+https://github.com/abixen/abixen-platform/commit/86d17749f5fea50d0dca75b128e42f132acd8a7b<br>
+https://github.com/abixen/abixen-platform/commit/d5eaf71d22405670f7ae10fcd0d998e21cc58661<br>
+https://github.com/abixen/abixen-platform/commit/056642f1e6c5d3665a50e3062bbf5adb85bbcb65<br>
+https://github.com/abixen/abixen-platform/commit/3ee17b3bc9bf692cc8bb7c2161a9be508031daca<br>
+https://github.com/abixen/abixen-platform/commit/306c12eea7d8b9af6a12f73795c24553e15db8a7<br>
+https://github.com/abixen/abixen-platform/commit/a389eb9b0330c65136d048c4c1d99861bb91ad17<br>
+https://github.com/abixen/abixen-platform/commit/290419865bc9a74e223f14a01859c1254c05810e<br>
+https://github.com/abixen/abixen-platform/commit/a95bb92d35722d44473feea201dca198df5e39c1<br>
+https://github.com/abixen/abixen-platform/commit/928c72f02a3b245cb434def0d24eccaa14ee4b5a<br>
+https://github.com/abixen/abixen-platform/commit/c492e8692a0952c67021efa10b2b86646c8eceef<br>
+https://github.com/abixen/abixen-platform/commit/a8656028e3d91620fa0cb7528da7821424e847ac<br>
+https://github.com/abixen/abixen-platform/commit/0781997a70a6a98b63a8cf3a501a71008befd922<br>
+https://github.com/abixen/abixen-platform/commit/ed4db50c1b7230c5cce70ca3a105dc879770c2e8<br>
+https://github.com/abixen/abixen-platform/commit/830c206c1b0c283a773155c79443ba69fba78b89<br>
+https://github.com/abixen/abixen-platform/commit/81d3f818efb2041e06232155ea797f69acaf6511<br>
+https://github.com/abixen/abixen-platform/commit/bcfd054fb6e7fd4f0ed536404267ae7678aac15f<br>
+https://github.com/abixen/abixen-platform/commit/fe78aef8f7515245afa4db79ac50540f55436390<br>
+https://github.com/abixen/abixen-platform/commit/f1cfdee2866deea5efa0616e35173e3809412f28<br>
+https://github.com/abixen/abixen-platform/commit/a3ab29ee2a2959478b2813515c7a62aab0bba3fc<br>
+https://github.com/abixen/abixen-platform/commit/8f2a8f91c01a2f7f141faf30a1980415cfc788ad<br>
+https://github.com/abixen/abixen-platform/commit/1680f68744021b125606bdcdd53e87278f23c6b3<br>
+https://github.com/abixen/abixen-platform/commit/d2f9feaa50d903b5c34f2571ec3bf3abe01150c2<br>
+https://github.com/abixen/abixen-platform/commit/ca2224b81065136d510f843b38be051d976cc604<br>
+https://github.com/abixen/abixen-platform/commit/f33fbc119849139c97b6f4e805c224cd29063430<br>
+https://github.com/abixen/abixen-platform/commit/f0db73c2dce6686413cc1f613a3d9978689673a7<br>
+https://github.com/abixen/abixen-platform/commit/38bfd4305d9a4a87a47fd137d81d4ec1b306163f<br>
+https://github.com/abixen/abixen-platform/commit/099ece5697489b766d7646ca5de19e46bb28df9d<br>
+https://github.com/abixen/abixen-platform/commit/1cdd01624222bdd9f32fca5dbf61877bc417897f<br>
+https://github.com/abixen/abixen-platform/commit/3a7b6cabace33c096f28becd06e2f085fcce558f<br>
+https://github.com/abixen/abixen-platform/commit/d9e061afb849a5a3301efc74b7da3b1aef3a3e4f<br>
+https://github.com/abixen/abixen-platform/commit/ad9ff6fa519a8b40374a399007c3a6231ef53299<br>
+https://github.com/abixen/abixen-platform/commit/f93d19d5aee457d62854c32ad59dc4a532353e47<br>
+https://github.com/abixen/abixen-platform/commit/251a44a15cfa008f9b99c1e69e521e2e679cc0ab<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/f54e1a1cbbadc8420cf5b68f17e1dc172ff95e04<br>
+https://github.com/shuzheng/zheng/commit/b675297bab1fb4d3578ecdad9ee48c4860474666<br>
+https://github.com/shuzheng/zheng/commit/c206cceaa6ef3c94144a77924f57912f790fe79b<br>
+https://github.com/shuzheng/zheng/commit/6595e97a15cca73f3c7e022c73905bb081cd1c93<br>
+https://github.com/shuzheng/zheng/commit/3641f27355f930594abc1b3c068ef3e54f821717<br>
+https://github.com/shuzheng/zheng/commit/970e2c7f5ed0637b96329c3b89078e7a6554d756<br>
+https://github.com/shuzheng/zheng/commit/c9699653a4d5772a9d0f9a2afffcbda7c3849a20<br>
+https://github.com/shuzheng/zheng/commit/2ddc558989f7f992a9cfab97529a8668a34a6781<br>
+https://github.com/shuzheng/zheng/commit/d31bdc1aaa0d124054113a6cefe4ffd895d5b116<br>
+            <br>
+        </td>
+    </tr>
+</table>
+
+<h3 id="Service registration and discovery">Service registration and discovery</h3>
+<table border="1" >
+  <tr >
+        <td id="links-cell-8">
+https://github.com/xcyeye/aurora-blog/commit/f249663b6da6af9faaacbab06cfa43111deb5274<br>
+https://github.com/lizibin/black-shop/commit/a825a2c626f94c64576c12f2cb9278506f362953<br>
+https://github.com/lizibin/black-shop/commit/4c20516f41596a33300ea065d470e86a1cf21025<br>
+https://github.com/nageoffer/congomall/commit/35cab47ecc0cd54cff1ec19e041843e7875d08d9<br>
+https://github.com/nageoffer/congomall/commit/b3ca0a4dc6be487cd08a7d1cadef9eedd7a66c97<br>
+https://github.com/nageoffer/congomall/commit/9a245151569f75cb616e9f4b55c0843d13943275<br>
+https://github.com/nageoffer/congomall/commit/a272cb2eaf733a643f68719e9c1c058dee6372c6<br>
+https://github.com/nageoffer/congomall/commit/93822ab0a5fbcaa0ca5c06ccdf969efe21284248<br>
+https://github.com/nageoffer/congomall/commit/f52cef05e7f8557ba441749088785304c890fa24<br>
+https://github.com/nageoffer/congomall/commit/19e03235e336ff769fd78291dd534df53ed2d2fc<br>
+https://github.com/nageoffer/congomall/commit/19ed4b431ff218b18a3d4a8eba5ca5ab65b6df8e<br>
+https://github.com/nageoffer/congomall/commit/42fda4e1c22e6b128b0377d4b7437111fbe3dd98<br>
+https://github.com/nageoffer/congomall/commit/a103bf5b42cd784ecea16def5cb85651e34e1889<br>
+https://github.com/nageoffer/congomall/commit/902b844942b48187e222266b75e8578db7b059c9<br>
+https://github.com/nageoffer/congomall/commit/10383678a48b580705f4ee00694df10c05777159<br>
+https://github.com/nageoffer/congomall/commit/fb79609232c32fadfc70ad265fb00a799094cf19<br>
+https://github.com/nageoffer/congomall/commit/e9276d1868e90ee85973f2b333ec61c8c8b360a1<br>
+https://github.com/nageoffer/congomall/commit/fbc7be1078ff4ae2c6c0bbc4f65357a05b3ef16c<br>
+https://github.com/GyalbuSherpa5/ecommerceMicroService/commit/2f052c55454dcd05b8865b8db56c00ed2822465b<br>
+https://github.com/RainbowForest/e-commerce-microservices/commit/d75574de0fe4960776f4dc824bcf36ce70125e57<br>
+https://github.com/RainbowForest/e-commerce-microservices/commit/692712f6499dca21adfadde43e61d366c3f690cc<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/9bfd2e97258a6fec2e6f9b535a367e76cec32ec5<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/df0f037ec76bb7ef22983f63b7a0a2b502e8adaf<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/ad73e34d763b609d6d3917f5fe700844894fc9de<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/efc1aa07ca3a00efe110c6778c5f141edda7df6d<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/6cc67e617ace09f87943315dd433f35fea30a2c3<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/a19f1c303a69cae5d7b121eb2b6ffab9cbd67c6c<br>
+https://github.com/eventuate-tram/eventuate-tram-sagas-examples-customers-and-orders/commit/a3ebd524e26831617c53a8958d36ca78565eac9c<br>
+https://github.com/eventuate-tram/eventuate-tram-sagas-examples-customers-and-orders/commit/c240ffa20e33654f8c4c5325d0f0efa934f54eaa<br>
+https://github.com/eventuate-tram/eventuate-tram-sagas-examples-customers-and-orders/commit/14a27f228b1d7216abe8227f3c7ecd748241c65a<br>
+https://github.com/eventuate-tram/eventuate-tram-sagas-examples-customers-and-orders/commit/423239af8eb223d427a933afd80a0cd5fadd8433<br>
+https://github.com/lmxdawn/exchange/commit/7981df37c4e6b3c2b0977a160f5ba3b4bdd98848<br>
+https://github.com/JavatoDev-com/internet-banking-concept-microservices/commit/1e7887864f40fa7db010e2c9091df016e8da35b7<br>
+https://github.com/Blucezhang/micro-server-own/commit/9ae4054c9d83dbe1e57a62819771dc551effc053<br>
+https://github.com/imrenagi/microservice-skeleton/commit/0293575d68410565c033da5d5361178605b8776b<br>
+https://github.com/imrenagi/microservice-skeleton/commit/63c2dcf72275d33ef915cdcaa32cf8d5a0b49104<br>
+https://github.com/imrenagi/microservice-skeleton/commit/ec93e25c9ec545a66f8a9883b09f75927101c987<br>
+https://github.com/imrenagi/microservice-skeleton/commit/082e2ad21fdaa66b5b349f029e7caa7c24c704ee<br>
+https://github.com/imrenagi/microservice-skeleton/commit/46977a9b52b66a0c14f936c21d60bfbd4b700d67<br>
+https://github.com/imrenagi/microservice-skeleton/commit/d753091df454de5d9c844df454df9ed1f28eb7fd<br>
+https://github.com/imrenagi/microservice-skeleton/commit/2676864dc7df9ef98e650dc7de0995d479ab6e53<br>
+https://github.com/qa-guru/niffler/commit/8cd695175110fb94621ee7c16188cd19a32b8c0a<br>
+https://github.com/qa-guru/niffler/commit/7bc7324fd9931c23201436343fb0be60baa1c9cb<br>
+https://github.com/qa-guru/niffler/commit/04571a46de4c49fe1fc8c08206b2453040f20519<br>
+https://github.com/qa-guru/niffler/commit/f585d8b71ae2dd2865f93493c68592579be4324c<br>
+https://github.com/qa-guru/niffler/commit/e71d1c977960257835e80edd9f912d2ad69a8582<br>
+https://github.com/qa-guru/niffler/commit/b8592b0042ae7c4f549c1d03a88af198cb43b031<br>
+https://github.com/qa-guru/niffler/commit/16058a9619e8887623203885d84400ea52a915dd<br>
+https://github.com/qa-guru/niffler/commit/9bce977e43cfecd6526be04d59b3bc665701db6f<br>
+https://github.com/qa-guru/niffler/commit/dde3404fa416a70f5d1adca60d68590beb495fb9<br>
+https://github.com/qa-guru/niffler/commit/e4346703f2fe0b780d0ea84cf98bcb0be3a48e0e<br>
+https://github.com/qa-guru/niffler/commit/d397276c910a9eedb8d0517ec13d71f5810f8b6d<br>
+https://github.com/qa-guru/niffler/commit/0773e71ee3ed9a452c115735660bc04f63581e37<br>
+https://github.com/qa-guru/niffler/commit/c0ea2859929b872200992faf0ca394526c9d2b1c<br>
+https://github.com/qa-guru/niffler/commit/01f495c3bf3499e218055c7ebc605260b9c958e4<br>
+https://github.com/qa-guru/niffler/commit/727b8df9f270509221fbe24634f126cb1873d140<br>
+https://github.com/qa-guru/niffler/commit/85ee7dd9b5859a3a633b79ecfabd71584bac5ff8<br>
+https://github.com/qa-guru/niffler/commit/2eb9bccd4b515c97bd83796dbd4a10295cb64ffa<br>
+https://github.com/qa-guru/niffler/commit/c8deb3ecd912f8d4d8d958207de0732806ebb914<br>
+https://github.com/qa-guru/niffler/commit/1a80aa49fd942514098feb925fa26d1918d12f8a<br>
+https://github.com/qa-guru/niffler/commit/290862c11464c75110a16a01bc8ea46bae635ac6<br>
+https://github.com/qa-guru/niffler/commit/f36d78483047fe15c2f11c196e44fbfe3545008f<br>
+https://github.com/JoeCao/qbike/commit/153cf1acfdfbee642ca08eb581f01739682e919e<br>
+https://github.com/zoltanvin/royal-reserve-bank/commit/7879e877a4d19dbfcd742e79cde935e6e4572b85<br>
+https://github.com/DreamCats/school-bus/commit/a7acc7e0de05bc16f457cd8433d1d3ca98b7a1c0<br>
+https://github.com/DreamCats/school-bus/commit/d6d2c47f095c5468397cb2491927ef7adf6b20be<br>
+https://github.com/DreamCats/school-bus/commit/efd2c1dae600ae37953eaef70da337d5082a8077<br>
+https://github.com/DreamCats/school-bus/commit/fbbf8647920836e8b2877e30256ba760a5a9ce9a<br>
+https://github.com/DreamCats/school-bus/commit/45b84ca433fef0b74be5a5718985775ef7aa1764<br>
+https://github.com/DreamCats/school-bus/commit/af5d099666ccece4c88d573d998c181257b7d59a<br>
+https://github.com/DreamCats/school-bus/commit/3a2fe62bbb29214f3fb62b25e96bb93d458a91ab<br>
+https://github.com/DreamCats/school-bus/commit/ca486f1833eca0401a56918b6bdd39e7135d8191<br>
+https://github.com/ShikGeng/shik/commit/47579da63351b2f921eb7ba2b31196e936ba4304<br>
+https://github.com/ShikGeng/shik/commit/3c5c1668aabd7e7801c1c65e63cb858d6053b15b<br>
+https://github.com/itning/shw_server/commit/9644ca9c8caa10c67fe2437e1839a88411c7e9d0<br>
+https://github.com/itning/shw_server/commit/23e4e40f9918e15b9a725b0bb63d7f5ee29e4530<br>
+https://github.com/myashchenko/social-network/commit/59b5acbba209e5d3dcc321e8910ba43f34b2e623<br>
+https://github.com/myashchenko/social-network/commit/6a7bcff23b56d3e2e5fafe99594fb1237f136e60<br>
+https://github.com/myashchenko/social-network/commit/a7ce46bc98797c50b0f5943f03555ad950d3e2c4<br>
+https://github.com/myashchenko/social-network/commit/4b4750a406b2df0931a45858fd0f3f90d9389d5e<br>
+https://github.com/myashchenko/social-network/commit/ae846553a62be5fa3f712710a18c80cd36936d00<br>
+https://github.com/myashchenko/social-network/commit/d1c215a21aab06f61527b556aecccefda872d13a<br>
+https://github.com/myashchenko/social-network/commit/81cf26cd524fcc300637d22cfeb9f6ad85c7dd86<br>
+https://github.com/myashchenko/social-network/commit/676014d924a58ebf993d2afd5ed75ead02125283<br>
+https://github.com/myashchenko/social-network/commit/e446b76ad19891372c8e5bb1053cb178b79554cf<br>
+https://github.com/myashchenko/social-network/commit/4ba3fcd80996db48838971fab798513ab8008d1e<br>
+https://github.com/myashchenko/social-network/commit/5169f1bc5969da0256d2ea6b945a5219d1257a95<br>
+https://github.com/myashchenko/social-network/commit/7d170c6ba5cf3f4e670460d409afd5f219d83536<br>
+https://github.com/myashchenko/social-network/commit/6cc2f87575851e1efc79b0517a7fc8533d4afa92<br>
+https://github.com/myashchenko/social-network/commit/9977caa76e14ac4912636d7a3267816169fb2938<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/a0d4d6f1eaa61dc0124af144adebf08f40ba3d4a<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/4272e1df831a89d5cd82978bc1242e85d232382a<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/5c47387fef5eaf843d30eca97b54fc5ec55ece01<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/41f9ea88bf3e9df3bc5cfc4ac93e25d609eda74a<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/e2ac6b4411fa44ae8ee73afad740694174ea17d2<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/3429bb582244acc9f9f0606acfba188799cfa6e0<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/e511e588ff1288d75fdf117f1c4965dfcc36ad01<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/219369b9235e432fe1df79bb0c760d19765c7d5b<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/7e3b9cb99b141c37c310303722c75e2829301ccd<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/e6ab8968b082512283fe42812ba8ab924c7e0f71<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/36ea451ee7d362423464991169f5300357aaaa0b<br>
+https://github.com/ylw-github/taodong-shop/commit/c223de59d96c54bb6e46bc5e6e532ec09ea12eef<br>
+https://github.com/FudanSELab/train-ticket/commit/15ae5c4102caccc6e6f84bce647cce1dcf4ad77a<br>
+https://github.com/FudanSELab/train-ticket/commit/2fe2dd072c0b9625634732e8aed5b8cbb972cbf3<br>
+https://github.com/FudanSELab/train-ticket/commit/545bd18c9d271680771b0e2eb3fb478690c653c6<br>
+https://github.com/FudanSELab/train-ticket/commit/0703065fc9c09b0853ae1c72fcfc9999f11a3252<br>
+https://github.com/FudanSELab/train-ticket/commit/97a90f003d7911c6cc09fb3534faf762c9950d57<br>
+https://github.com/FudanSELab/train-ticket/commit/561b2a6a6f41dd5c445c07327b1a2eebb42a2bd3<br>
+https://github.com/FudanSELab/train-ticket/commit/fa8acc16428cc4aee24e2c1eb8dbea4c747d0c0c<br>
+https://github.com/FudanSELab/train-ticket/commit/77b2863ae39a5f9e2eedf5bd5f58beb97a6e09d0<br>
+https://github.com/FudanSELab/train-ticket/commit/137094f2f64062a8e8a974fac24842d457ca1cb5<br>
+https://github.com/FudanSELab/train-ticket/commit/83336a407682e95ecf6e892163afca0687f44329<br>
+https://github.com/garystafford/voter-service/commit/e23886ed684bf676dc7f0287a563ff30f0f677de<br>
+https://github.com/garystafford/voter-service/commit/333e20dbcbd9e7ec0b82677d773fb8ea38511054<br>
+https://github.com/garystafford/voter-service/commit/042964ccdfdf79e21c7c14c1171738665d8412b5<br>
+https://github.com/garystafford/voter-service/commit/48ce2695f6657f9a6ee9312e0da1370eed6f66d1<br>
+https://github.com/garystafford/voter-service/commit/1fad1740cbd5555b381c605f87b5145d385e78b9<br>
+https://github.com/garystafford/voter-service/commit/15feafb1f961e1c9d74673ab932eec0ce517957c<br>
+https://github.com/garystafford/voter-service/commit/bbfcc578132ab02ae2d363b9aec13823933d1361<br>
+https://github.com/garystafford/voter-service/commit/2184a0630b46834acaf15cb207776cab3da35b7b<br>
+https://github.com/garystafford/voter-service/commit/b9ef4d9fb5b64c8bdb575289347fbe4b516fbd6b<br>
+https://github.com/garystafford/voter-service/commit/b89ba18d4d4633a1c6082e360211e8430719bce5<br>
+https://github.com/garystafford/voter-service/commit/fcdb4e03e666c397d6cd62203c455f7aa21e4b05<br>
+https://github.com/garystafford/voter-service/commit/088e8de7606e7a3f8a55b50efde5fc01a84a879d<br>
+https://github.com/garystafford/voter-service/commit/dd8da03976d26e51c4659aa0b3f403365a1d4901<br>
+https://github.com/garystafford/voter-service/commit/c2e3e0eb97d93103b7a8a745b5cfc4b50878d452<br>
+https://github.com/garystafford/voter-service/commit/4ab18cb7a7ad8814724ab342f2df02af7a517fc9<br>
+https://github.com/garystafford/voter-service/commit/b3ee2f99e8f047f31dd76ba26ca000670acce695<br>
+https://github.com/abixen/abixen-platform/commit/176afadb30d60278daacd1b6497753d100084e78<br>
+https://github.com/abixen/abixen-platform/commit/86d17749f5fea50d0dca75b128e42f132acd8a7b<br>
+https://github.com/abixen/abixen-platform/commit/d5eaf71d22405670f7ae10fcd0d998e21cc58661<br>
+https://github.com/abixen/abixen-platform/commit/056642f1e6c5d3665a50e3062bbf5adb85bbcb65<br>
+https://github.com/abixen/abixen-platform/commit/3ee17b3bc9bf692cc8bb7c2161a9be508031daca<br>
+https://github.com/abixen/abixen-platform/commit/306c12eea7d8b9af6a12f73795c24553e15db8a7<br>
+https://github.com/abixen/abixen-platform/commit/a389eb9b0330c65136d048c4c1d99861bb91ad17<br>
+https://github.com/abixen/abixen-platform/commit/290419865bc9a74e223f14a01859c1254c05810e<br>
+https://github.com/abixen/abixen-platform/commit/a95bb92d35722d44473feea201dca198df5e39c1<br>
+https://github.com/abixen/abixen-platform/commit/928c72f02a3b245cb434def0d24eccaa14ee4b5a<br>
+https://github.com/abixen/abixen-platform/commit/c492e8692a0952c67021efa10b2b86646c8eceef<br>
+https://github.com/abixen/abixen-platform/commit/a8656028e3d91620fa0cb7528da7821424e847ac<br>
+https://github.com/abixen/abixen-platform/commit/0781997a70a6a98b63a8cf3a501a71008befd922<br>
+https://github.com/abixen/abixen-platform/commit/ed4db50c1b7230c5cce70ca3a105dc879770c2e8<br>
+https://github.com/abixen/abixen-platform/commit/830c206c1b0c283a773155c79443ba69fba78b89<br>
+https://github.com/abixen/abixen-platform/commit/81d3f818efb2041e06232155ea797f69acaf6511<br>
+https://github.com/abixen/abixen-platform/commit/bcfd054fb6e7fd4f0ed536404267ae7678aac15f<br>
+https://github.com/abixen/abixen-platform/commit/fe78aef8f7515245afa4db79ac50540f55436390<br>
+https://github.com/abixen/abixen-platform/commit/f1cfdee2866deea5efa0616e35173e3809412f28<br>
+https://github.com/abixen/abixen-platform/commit/a3ab29ee2a2959478b2813515c7a62aab0bba3fc<br>
+https://github.com/abixen/abixen-platform/commit/8f2a8f91c01a2f7f141faf30a1980415cfc788ad<br>
+https://github.com/abixen/abixen-platform/commit/1680f68744021b125606bdcdd53e87278f23c6b3<br>
+https://github.com/abixen/abixen-platform/commit/d2f9feaa50d903b5c34f2571ec3bf3abe01150c2<br>
+https://github.com/abixen/abixen-platform/commit/ca2224b81065136d510f843b38be051d976cc604<br>
+https://github.com/abixen/abixen-platform/commit/f33fbc119849139c97b6f4e805c224cd29063430<br>
+https://github.com/abixen/abixen-platform/commit/f0db73c2dce6686413cc1f613a3d9978689673a7<br>
+https://github.com/abixen/abixen-platform/commit/38bfd4305d9a4a87a47fd137d81d4ec1b306163f<br>
+https://github.com/abixen/abixen-platform/commit/099ece5697489b766d7646ca5de19e46bb28df9d<br>
+https://github.com/abixen/abixen-platform/commit/1cdd01624222bdd9f32fca5dbf61877bc417897f<br>
+https://github.com/abixen/abixen-platform/commit/3a7b6cabace33c096f28becd06e2f085fcce558f<br>
+https://github.com/abixen/abixen-platform/commit/d9e061afb849a5a3301efc74b7da3b1aef3a3e4f<br>
+https://github.com/abixen/abixen-platform/commit/ad9ff6fa519a8b40374a399007c3a6231ef53299<br>
+https://github.com/abixen/abixen-platform/commit/f93d19d5aee457d62854c32ad59dc4a532353e47<br>
+https://github.com/abixen/abixen-platform/commit/251a44a15cfa008f9b99c1e69e521e2e679cc0ab<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/f54e1a1cbbadc8420cf5b68f17e1dc172ff95e04<br>
+https://github.com/shuzheng/zheng/commit/b675297bab1fb4d3578ecdad9ee48c4860474666<br>
+https://github.com/shuzheng/zheng/commit/c206cceaa6ef3c94144a77924f57912f790fe79b<br>
+https://github.com/shuzheng/zheng/commit/6595e97a15cca73f3c7e022c73905bb081cd1c93<br>
+https://github.com/shuzheng/zheng/commit/3641f27355f930594abc1b3c068ef3e54f821717<br>
+https://github.com/shuzheng/zheng/commit/970e2c7f5ed0637b96329c3b89078e7a6554d756<br>
+https://github.com/shuzheng/zheng/commit/c9699653a4d5772a9d0f9a2afffcbda7c3849a20<br>
+https://github.com/shuzheng/zheng/commit/2ddc558989f7f992a9cfab97529a8668a34a6781<br>
+https://github.com/shuzheng/zheng/commit/d31bdc1aaa0d124054113a6cefe4ffd895d5b116<br>
+        <br>
+    </td>
+  </tr>
+</table>
+
+
+<h3 id="Service registration and discovery">Service registration and discovery</h3>
+<table border="1" >
+    <tr >
+        <td id="links-cell-4">
+https://github.com/xcyeye/aurora-blog/commit/ab8ae91a3c5ca79cfddfacc7ac65ebfae54d14f0<br>
+https://github.com/xcyeye/aurora-blog/commit/d328f6c0439bb66117bc9b76c56011e619c5274d<br>
+https://github.com/xcyeye/aurora-blog/commit/e26a0933ccefc5370ec8ea35df6b89d896de069d<br>
+https://github.com/xcyeye/aurora-blog/commit/2acd09aa6442a67438022252771fed55c29c7bb0<br>
+https://github.com/xcyeye/aurora-blog/commit/80585a552926319fe22ba4da6eba134aa735f26d<br>
+https://github.com/lizibin/black-shop/commit/fb71a1eae45223490a63e4522884290bb65cb3e4<br>
+https://github.com/lizibin/black-shop/commit/50b573c1a6ce71f4ad94f069cad772a3cd7ca59e<br>
+https://github.com/lizibin/black-shop/commit/6660734e52805ddd7c2f8ca878a20338bb1f3680<br>
+https://github.com/lizibin/black-shop/commit/1c816ef58e085e585cb62c6f0a765ffb62236fed<br>
+https://github.com/lizibin/black-shop/commit/938fe7a52a31ceab4dfe9ef9eaa38e9753bb4ea1<br>
+https://github.com/lizibin/black-shop/commit/405af7fb32d5d5a66cec05becfa32aef225b0532<br>
+https://github.com/lizibin/black-shop/commit/6a6cc9e8831f531bfa70010ea6fbab783eb75901<br>
+https://github.com/lizibin/black-shop/commit/a6ac6cb84df65e8e379bb171489cc91ecdc4c42f<br>
+https://github.com/lizibin/black-shop/commit/86fd4f27a0accd3189eb3cb1e1e911eec3b62fc2<br>
+https://github.com/lizibin/black-shop/commit/1f40ba02b5aef4476888382b794a9a8470baaee7<br>
+https://github.com/devdcores/BookStoreApp-Distributed-Application/commit/f2e637a7b28019771b0aead3d0649580b25fd50e<br>
+https://github.com/devdcores/BookStoreApp-Distributed-Application/commit/d87c45124404ac9f82d2692ac33eb1dc67de24a1<br>
+https://github.com/nageoffer/congomall/commit/e93c203eb719fb4276efeb66e1fbbd300d4c50d0<br>
+https://github.com/nageoffer/congomall/commit/fceee7d130407e55bbab7e1b0032a04a06f88735<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/b61e783bc654c26f09403bfed1eb7d61b6bd79a1<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/c7b94c0ee0c70547721850410d97387a41d136d7<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/b17451097a5b253f91a5e52c5905b97d17a8b663<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/c5940ce64728bcb4b236407a32badbf52909b362<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/24b822f58539b1e388f79a4649ea09bacc2c7555<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/700407fe9329572029158bd582b500dd399eb8e6<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/8c47256d35f70e52fc30fd9ed708e89058328dd3<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/213091c0438a796b3cc16319154b107534ef6b10<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/8b7e2ad56493bf911e9af145d94c6ec1b475071e<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/97ec329e424a822336f07fce35363b4a9fa80376<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/ef20cccd37ac8ae9906484fed16856a123e7eace<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/e8b0d933c548c1f69682a37f950fc0ddc9da4b96<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/881fd6b8e37fa7350ee01b1b70a56a911f341b51<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/9e8c37cf8fd47181d3d2a37a54e39a9334d7d20d<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/77e869f90eba18e118bf9059207722a3f4889927<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/e11bd160bec9f0f5ef9e6f9ebc761e7849623e74<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/61d1d4296f1b99519e7a987b58388d6b72cde41a<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/1d032b1049c403149d7734d93282f1fbb89661ed<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/e4a8cacfd9b3fdc27025cbdc3d81fe6c72e99bbc<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/e1fc9db56a659a8e3a26c375652405bfd7d428c8<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/fefa4a2136779e5d0fad189ff660562fc585bef8<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/a9599469268e89dda375e35f3db134edf5bfde78<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/eaa471d18c1aa2f5f75f366d4ab907c9f6b8aacf<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/c3f1a8de2aa3339fc54c1d3542bdbdc35ba0b735<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/0a3c7b4c53d2c865ae0c1dad50c68a571dd4f76a<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/d50e3d2207eebfb88ba26934c219a5222b25a888<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/a4270ef233bea8b634a604c51e0b1127039d28b9<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/f6fb7dd49f4af0457ee9c5e5d3a679cec88f157e<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/fc9f45100aaa3f554d0c34bd5e4ea38f1bc64baa<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/1823c19d939830e1284ab817fdef2a2f9d028af6<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/47f6b0284fda4e0e18ab3f7ad357f286db905432<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/5ec39f89407247aaac0bc6d66e22d8aaced6aad7<br>
+https://github.com/JavatoDev-com/internet-banking-concept-microservices/commit/1272b3c39f7b1de4687cd639fb7d42716df7c328<br>
+https://github.com/JavatoDev-com/internet-banking-concept-microservices/commit/348088945a5ef88042f9280c2417f24751749285<br>
+https://github.com/HMingR/irh/commit/2662d94d1f57637934573a88f68c41f1750aecdd<br>
+https://github.com/Zealon159/light-reading-cloud/commit/8e797a3aa96bf35a3f066d02717af6b25d0416f1<br>
+https://github.com/Zealon159/light-reading-cloud/commit/e975346ef8d27243d6071764728e351d3a67c0c2<br>
+https://github.com/Zealon159/light-reading-cloud/commit/692352195d90b12479f061f7db01bfcc95d411d9<br>
+https://github.com/Zealon159/light-reading-cloud/commit/43a1f1a7f7c7b0347180ff7ee4d01e56ae4eaec3<br>
+https://github.com/Zealon159/light-reading-cloud/commit/7ae6db83617c1e914115cd23e438a09917cd7ef8<br>
+https://github.com/Zealon159/light-reading-cloud/commit/22027deb8dfda58a4a75da17096c6ee92e334fe2<br>
+https://github.com/quhailong/NetworkDisk_Storage/commit/7c0835a5fa355bafc4d397ae353f772194fd7b63<br>
+https://github.com/quhailong/NetworkDisk_Storage/commit/185ce069b7ce3675b56fb2e7ecfa8b71981f784a<br>
+https://github.com/quhailong/NetworkDisk_Storage/commit/cc762667ca5f99302fd92cd9365e5e7316cd469f<br>
+https://github.com/dongjuntao/readygo-mall-cloud/commit/550f1afb2d49882d7df609c29caccc7ab781ea7b<br>
+https://github.com/zoltanvin/royal-reserve-bank/commit/80964c130b6005b5cee3aaa1b7d4e307cf2f6952<br>
+https://github.com/DreamCats/school-bus/commit/f10f1163cc1778f155e6cdbb63beab2463ee28ec<br>
+https://github.com/ShikGeng/shik/commit/9744395bbdb6cb422080d6725ce72e6c1e20fc12<br>
+https://github.com/ShikGeng/shik/commit/2ce93c9054fe78639f7eeebfa29f4ed8da421a8f<br>
+https://github.com/ShikGeng/shik/commit/03f4430f2f5a0ba923c03821e98777bbe0b6719d<br>
+https://github.com/ShikGeng/shik/commit/cee89bfd65805e8b0b7b07c4633d986aeb0fb107<br>
+https://github.com/ShikGeng/shik/commit/12c7475d7c7ff3104c49b87453b4d4886cc96074<br>
+https://github.com/ShikGeng/shik/commit/b740b7c83ae9a20b30a522e7e824c83eacd2639f<br>
+https://github.com/ShikGeng/shik/commit/a83b5c534f4d233fc226568f998d7fac38266e86<br>
+https://github.com/ShikGeng/shik/commit/e497e1ce199d76113b70f71e11cf735a2f556ef7<br>
+https://github.com/ShikGeng/shik/commit/e75703b0edcb5314addbb3fd4c27532931419a99<br>
+https://github.com/ShikGeng/shik/commit/d9ca8074341e10577b2d89744f70a275517be3f3<br>
+https://github.com/ShikGeng/shik/commit/f80d38c7f03724ac73d4ce7749eb20a6326f7392<br>
+https://github.com/itning/shw_server/commit/b95375d326500e1833b062c4187812cd04012dee<br>
+https://github.com/itning/shw_server/commit/5b874cbed97f4fbec2497ea42f18be072477d37a<br>
+https://github.com/itning/shw_server/commit/532d08a7a1f96dd2e3e01385b77152756390a898<br>
+https://github.com/Advancedpawn2020/sns/commit/9141d32c370fcf6998b3fa2b2fc07e98744f469e<br>
+https://github.com/Advancedpawn2020/sns/commit/77e35700118dd2fd72007590a353fd20aa7f481d<br>
+https://github.com/Advancedpawn2020/sns/commit/3ae69563359989e5b3691a8426e834c8ac1cc572<br>
+https://github.com/Advancedpawn2020/sns/commit/b123025a9836df0a45fb97385e1d5204910ecfcc<br>
+https://github.com/myashchenko/social-network/commit/bb3963199de4c448242958156dba67e008162a01<br>
+https://github.com/myashchenko/social-network/commit/3fa6a235f0c8861901d509bdcc510a4bf97e29fe<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/8c11121d6396302ea1ee755fd8b99cc87cd8f890<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/8141d469397c5964a7569a40c02f859f95315223<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/149e857cb1e3daadf3c898470a0e6d331d2a8ea7<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/c4d3897500d9e50df14106b52db12631ff01c34b<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/575939516547511e36de9768f966b11fefb18f3f<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/5906244f745cd6536482af7860f53d900804992b<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/ec8acea432046d2ab4f65bec3bbd0e5cf53ae69c<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/9f6aeee5250142ec5bd4c19a36ee0d6b1f4670ab<br>
+https://github.com/hnjaman/spring-boot-microservices/commit/ead9e4561480299bcf6d62c9c7a45738f3b9a273<br>
+https://github.com/hnjaman/spring-boot-microservices/commit/7bd09938a1cb6fc1fb286259de3ead2c68cbdde4<br>
+https://github.com/hnjaman/spring-boot-microservices/commit/d032d23f58ebd8ee864d0dfd336309466fc62235<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/fe8fc16e0253a429848843f71335610b30d5358a<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/8af4772ec377cbaeca75ea19a16e9d64980e80d4<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/072e792758ab037ae31b2bf01b9129f7b7ae1280<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/a5e94ef63e57ec88138a2e4cbbee20b6bfa18a19<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/5cf920953bf2cf359d6755e56b85d94f4b5d21e2<br>
+https://github.com/ylw-github/taodong-shop/commit/af6eed34c0068f674312b9de6c8d7b6ef60b2f5b<br>
+https://github.com/jjeanjacques10/twitter-microservices/commit/c04230b801fbdc174a36eab99e5e7fcd974ae836<br>
+https://github.com/jjeanjacques10/twitter-microservices/commit/ea5d2a2c02f76207a38d59f8079b24ed4ca1a537<br>
+https://github.com/jjeanjacques10/twitter-microservices/commit/3d3f6cd8d563491eae39379e0b5a3fceff71f255<br>
+https://github.com/jjeanjacques10/twitter-microservices/commit/df70a906eb1877f79f4ea5b728b50e8f595c121a<br>
+https://github.com/jjeanjacques10/twitter-microservices/commit/8bd750cc0649a8e7e050ec5896ffc7e3be52afea<br>
+https://github.com/jjeanjacques10/twitter-microservices/commit/c8d4db25fd2ff7b7f974ea1234d6717589b394f2<br>
+https://github.com/jjeanjacques10/twitter-microservices/commit/7a138dd03d8862c29714cb069d5bc329f1122308<br>
+https://github.com/jjeanjacques10/twitter-microservices/commit/b2af84f5bc97d791718c27e536d223e6f8b26e2c<br>
+https://github.com/hiejulia/warehouse-microservice/commit/5b69d75260938f2663768ee5ed6d46e157f25dd8<br>
+https://github.com/WuKongOpenSource/WukongCRM-11.0-JAVA/commit/1fa4ec2fdf727111eca73ef4c94dfbb7712c83bb<br>
+https://github.com/WuKongOpenSource/WukongCRM-11.0-JAVA/commit/5b69f8f6ee37efc61b9fdf038c6dcb10ee0bb898<br>
+https://github.com/abixen/abixen-platform/commit/67392d0c753d7b68cc71e69c194f015626252ca4<br>
+https://github.com/chaokunyang/microservices-event-sourcing/commit/aac5e1e69e84c653681b81526255442a8df56a2f<br>
+https://github.com/0xcaffebabe/blb/commit/7fbbcd354475b4d92a6366256f277a60c50c2e61<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/cbc580338a9b07e9f38e4bb9ca6cb96f83069328<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/bdbb12a0c6312c1566bbe72e637a970ac8994e4a<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/cb54a95f66a91ba8b19cb624973e4829d50db308<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/879e19299eb5077dd54ae1e864bffdc85e2b8e30<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/b94b0f78ad7900e7d1a8b224f09ab9f73dbafcf8<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/80f9b958df98a781972ff76c6edd80d17f9b0c9d<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/fd5a70c23017a69f47f97463ce64eb6222d38a72<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/672c598c9e7ca0867c8b89b809402bfdc0e84c24<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/96a624b49941946bfc043aa256b239759dfd6ca4<br>
+https://github.com/stick-i/scblogs/commit/72d296690c902b332b7ef149902784025c911018<br>
+https://github.com/stick-i/scblogs/commit/1553024353fc3f42ef6d35d89b265a2f830a8c8f<br>
+https://github.com/stick-i/scblogs/commit/4781813cfa5e4bc6aef64937e73b70bf0390a95f<br>
+<br>
+        </td>
+    </tr>
+</table>
+
+<h3 id="Service gateway">Service gateway</h3>
+<table border="1" >
+    <tr >
+        <td id="links-cell-5">
+https://github.com/xcyeye/aurora-blog/commit/b51f7ab7f34837eb4108a6c871592b83130fe1bd<br>
+https://github.com/lizibin/black-shop/commit/39ac674a95698ce6a6cbf3a08d012e8bbec959c8<br>
+https://github.com/lizibin/black-shop/commit/57e827e1cdd3dd491f819c8da6cd10f6047ee690<br>
+https://github.com/lizibin/black-shop/commit/c5ab43abc14b5a57fbdde7ca1eb145ca999fa49d<br>
+https://github.com/nageoffer/congomall/commit/12e0697a17f0b4afdaed63cf319c0217a440dc2d<br>
+https://github.com/RainbowForest/e-commerce-microservices/commit/79b61d389b168f4606efd9574f6faa64a66f2689<br>
+https://github.com/RainbowForest/e-commerce-microservices/commit/c3072e6ab087ea90097fc2ae174a75c4016b0002<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/a66f06ee50248dfa916c9441e441fb776c6c7fa2<br>
+https://github.com/h1r0kuu/ecommerce-spring-react/commit/7b889e01be29de783044c9b9eb4c4ca06c02df0d<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/f4b9c93a108ea5656d258e2178a68e3e550f1b40<br>
+https://github.com/HMingR/irh/commit/f1bdad5c2bcaec6fed221c0ca7066d26db636148<br>
+https://github.com/Durancer/JMU-Campus/commit/70b532ef83a10501fce01eb137b80081d5179ad6<br>
+https://github.com/Durancer/JMU-Campus/commit/9647a51cf889a60cbc432f11730768e7a1792a0c<br>
+https://github.com/Durancer/JMU-Campus/commit/aac36b53b0984bd0b7081df0359ee97dcf3ab000<br>
+https://github.com/Durancer/JMU-Campus/commit/c60f7535e4063ca1a33a1c1789053b0f775188f9<br>
+https://github.com/Blucezhang/micro-server-own/commit/14de5829911f184174d46650f31b9b5ba825c054<br>
+https://github.com/stalary/microservice-recruit/commit/791ffb81a1e0d78cdc5abc869affc5a286e28619<br>
+https://github.com/quhailong/NetworkDisk_Storage/commit/19dc73554af76fb11acf82f01f992f1c09d6f50f<br>
+https://github.com/quhailong/NetworkDisk_Storage/commit/8cebb11ba957f0cfdae8d3059e708b078ca86e15<br>
+https://github.com/quhailong/NetworkDisk_Storage/commit/103d2dba13f2a86a8975a5db575e70bdc5982b05<br>
+https://github.com/dongjuntao/readygo-mall-cloud/commit/24732e6b41fa2f1fe831891be40e45d3c50a2f9b<br>
+https://github.com/ShikGeng/shik/commit/9667cf5d9950d63a8d8c1062ccc09108af2b907f<br>
+https://github.com/ShikGeng/shik/commit/915df7b952624127f2494ff9bece370ff1036863<br>
+https://github.com/ShikGeng/shik/commit/b708ec74d55e60f114ebd4c62f351991a007ce75<br>
+https://github.com/ShikGeng/shik/commit/ffd3e6720e884bf91e1ae4d034d57196f333b8c7<br>
+https://github.com/ShikGeng/shik/commit/e2450398f6f287044f1abbbd7b7b7c56398a6983<br>
+https://github.com/ShikGeng/shik/commit/2bbbeb0d28e5a2705eb8c0d640360dfa14e92dd2<br>
+https://github.com/ShikGeng/shik/commit/d2b6fb8ad35e78a835794b8cc92494319892a3f3<br>
+https://github.com/ShikGeng/shik/commit/4820a157752cae383a689be88de94a8637a9092e<br>
+https://github.com/ShikGeng/shik/commit/823e200edb50edb760e55404712cd6d4f66a049e<br>
+https://github.com/ShikGeng/shik/commit/97d80dfbee6e9391fb7452e579dce6299c3ca225<br>
+https://github.com/ShikGeng/shik/commit/c805acb13c59f8fe725a87afee8239426658ec39<br>
+https://github.com/ShikGeng/shik/commit/7c1cd4be6cebbea3fd668839d7abde9e3bbcc7c3<br>
+https://github.com/ShikGeng/shik/commit/7a07e05f5a2f9a1df519b6e01d70dabd8613af1d<br>
+https://github.com/ShikGeng/shik/commit/93869bb5b47c8e34b8b87830667775218547a26f<br>
+https://github.com/itning/shw_server/commit/5738ba3204d99b1de60606a1168d5be6707e380d<br>
+https://github.com/itning/shw_server/commit/21c065d619f8ccd1177a8f2a23095a7dd019cea6<br>
+https://github.com/itning/shw_server/commit/31bd7d190ec62da7023fd6a41336e5740d61edec<br>
+https://github.com/itning/shw_server/commit/4e5383ca752dcafa4d8eb9a20274076c29f4e448<br>
+https://github.com/Advancedpawn2020/sns/commit/faaf85d4b6d965be925982fc63a467ceca43b84d<br>
+https://github.com/Advancedpawn2020/sns/commit/375b1c85afd3c97e6db90503ca639f74dc045674<br>
+https://github.com/myashchenko/social-network/commit/e538266264729b82498af31bba1ab67126f0a986<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/a13dfa3611bddc6e6b9718a0b26eb59c338dc3c9<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/bda644e685861514836fc7c321fc716bc7b17498<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/a0f83202e64a0a20a81c6f1df646bb644beba60c<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/d96e31e7d5a8c2a3b811161db5dfdebd514a0606<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/16324cb2d650d871c49dbef862a73b8b35965f6e<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/812f0202be848aa370b1864ca82b18c0736e7535<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/f60b873a84cce15b5484cfa9ccf2b31800eb05a2<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/40c8412d0353c7e41804179bb232e034b09bcdf9<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/56c66a289d73392919fb2cf5852f05e1b40d454d<br>
+https://github.com/Zhrzy/SpringCloudBlog/commit/aea3637418b3fa5f15e05283da161b0e7e0f1baa<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/4bd300eb2533fd1e0afcec025ab80e46621c1f3e<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/3c953f6aae9c9479b9deaa77f2a0641577387f47<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/b8788f2d6697a336235bdd0239f2640ef78ceb53<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/0c88544f318dc97f838d6ea78c7e9f2feb475117<br>
+https://github.com/kubAretip/spring-micro-websocket-chat/commit/25b8871526c1063e4848614ebd0a72727d409e37<br>
+https://github.com/ylw-github/taodong-shop/commit/d439ec96b39dc0adf0d697cbc6bfc87c1c3b7dc8<br>
+https://github.com/ylw-github/taodong-shop/commit/8e89a7b9c7d01685c45f11f545449d95ede0293b<br>
+https://github.com/mikuhuyo/wanxin-p2p/commit/e7cd590c6ef5d1f8ad123a6556b31d2b47187bcc<br>
+https://github.com/abixen/abixen-platform/commit/95dd794d34e7882c4db677a9ce92caf76273a149<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/0987517741819bc4b73adfbc0c21e6a296ecc14d<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/a4ab7deccb4d2cf73ec63746e4f9b673e869fa4b<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/5531ecb48eae9bbedcd8379eaf8f5c91725493d9<br>
+https://github.com/stick-i/scblogs/commit/468041d6d6dd5f69cfce09d3eeca970566bd00b2<br>
+            <br>
+        </td>
+    </tr>
+</table>
+
+<h3 id="Microservice monitoring and tracing">Microservice monitoring and tracing</h3>
+<table border="1" >
+    <tr >
+        <td id="links-cell-6">
+https://github.com/lizibin/black-shop/commit/7bc2aab5ed1213ea44964644281c530a22a88cf7<br>
+https://github.com/lizibin/black-shop/commit/c5973093d9c5c1ce29393a2a1d3f0db18ba6d129<br>
+https://github.com/devdcores/BookStoreApp-Distributed-Application/commit/e44fc159dae0cd54bb09b07d0e8cca5120256415<br>
+https://github.com/devdcores/BookStoreApp-Distributed-Application/commit/94f20fdbf33040d171d23b3443127e37f065fc25<br>
+https://github.com/nageoffer/congomall/commit/6e58fa12926f6910bb9f0ce9b38c9898b1a4db19<br>
+https://github.com/nageoffer/congomall/commit/fae615472c1e0bfb41f79af4886ee05d9667d821<br>
+https://github.com/nageoffer/congomall/commit/275e6afe3c07a821d8984e44a8f8696166615b3e<br>
+https://github.com/nageoffer/congomall/commit/349f8e8b55c79f30693e417ce06a8bedab81b32c<br>
+https://github.com/nageoffer/congomall/commit/7c0bf01380a7abfa6473b6c00169ee0c6482ddbe<br>
+https://github.com/nageoffer/congomall/commit/f5fbb5b35d01f5703c543a179e2e834d9d312a59<br>
+https://github.com/nageoffer/congomall/commit/7d2cbc4d89444f5e736f85c8140075c20d161fa9<br>
+https://github.com/nageoffer/congomall/commit/274de356f9dafbf8c4fd63e0aa058d1f14eaad88<br>
+https://github.com/nageoffer/congomall/commit/bcca484c9aab67daa91680e790881150dad1773a<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/1156cfb620a838083bb69d05ba4b33ffba014a3a<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/1749a986f1cc76ded129822fa42265a7df54d0cf<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/9ed6180d27aaf23ca494361478d039aebcea6797<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/75c77d28e297c57e7e42f911635fa440cff7a816<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/8d043ec5f28973ecb7f2da780d43b7cd283314a9<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/b2f549dcf613e3033bce15adf891b081e606d172<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/d3cd296f0ae7bd37c6128bbb98adb0d999910506<br>
+https://github.com/Armando1514/Event-Driven-Microservices/commit/7c43c9dfdb010545ae9f42ff450229a4ebebf64d<br>
+https://github.com/eventuate-tram/eventuate-tram-sagas-examples-customers-and-orders/commit/1985d7603adfcca1958642c19688f3f7f73a9dc6<br>
+https://github.com/stalary/microservice-recruit/commit/282cbda9c728000addb127060211853b2297df20<br>
+https://github.com/stalary/microservice-recruit/commit/4cb19ab769ada02ae014aec863e35a2199a99c31<br>
+https://github.com/JoeCao/qbike/commit/1d3748b318a5a92520afad3db88a2eb77a6c0c0e<br>
+https://github.com/JoeCao/qbike/commit/2da9500033cbc19928098488f83cc5fee03b6e51<br>
+https://github.com/JoeCao/qbike/commit/1d6e0a1f3fd6cb7bca4f369625bf2b6a7d411568<br>
+https://github.com/JoeCao/qbike/commit/68953d4a3d3c908faf9603c4f8360150907b6bc2<br>
+https://github.com/JoeCao/qbike/commit/efecd5e5c24c3dda018030ed3defe56899b1c0b5<br>
+https://github.com/MuhammetTahaDemiryol/rentacar-microservice/commit/6c877fb7ab9b22d8506a4a9f10dc75002e82bb7f<br>
+https://github.com/zoltanvin/royal-reserve-bank/commit/28853902eef2970b3b644b56335b653aa24b45ee<br>
+https://github.com/itning/shw_server/commit/f861a6f9990c57369ae55eb7e974d49f1978b4f8<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/2a4a65abe9c81ef7200ec892814594fed0156dc9<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/641febd14527a7edb0e9efbc53d62361fa218272<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/d4bcf3dd056c145952653feb75e3835eaeff7d08<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/851b651780fe6ab3f8271975e58969b579340e76<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/8ec7e7fc57171f51ec3d03e2a108cf3dd2744c41<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/62e6795bc6f6fef6de1b5cc0d2163b205bd546e0<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/ab0fc9fca37b8b077073f6c853c492663938c6cb<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/7bb1b2e42ef56dbcb8df97abdf8b62c647e6a6a8<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/023f51c1445458445ece7c2de0785c70c3ccd939<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/2618768bd49e6056317e132829784ad5b561ca77<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/29ea1e36679748272a7beabcb433c08da3432f3e<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/3b30ac2b9612f3d28dcfd56ae947a1f94f437d65<br>
+https://github.com/FudanSELab/train-ticket/commit/1e671c7f3d4b72e0fe73bce4b85f90587066bc03<br>
+https://github.com/FudanSELab/train-ticket/commit/e790feb951315d53f581f14546e166b9c63f5489<br>
+https://github.com/hiejulia/warehouse-microservice/commit/39b41de3154ea89fe05367eb34305dda96c25855<br>
+https://github.com/hiejulia/warehouse-microservice/commit/5e09989dfb78c405c598c11b4de9065f4d2fae9a<br>
+https://github.com/abixen/abixen-platform/commit/69cc58b1ccce066e7ebf37395e9b12a9622ec6aa<br>
+https://github.com/abixen/abixen-platform/commit/c9c7a66e1fe59baa6b0454610836ef54d0176268<br>
+https://github.com/abixen/abixen-platform/commit/23ad20aeb32186e35e55c1bed8d1dacbc81fa22b<br>
+https://github.com/0xcaffebabe/blb/commit/ac63c235fd6405b8f0edd837092d6af45ea56229<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/10bea327a27de8485cba37af3c5a102c198fc649<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/936e5753b4244f3925cadd73997445e26daed4fd<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/11cb78a280202aba8ab85a2e646ae5a12191c41c<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/7fa0d7bffe299484f74364297a839878b527120e<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/b3b3797588eeb2fb24579643d62f33243724ba94<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/76c4580a690c43bb1297edc793a2b1087f8c39bd<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/2f7f631dd4e94cba1fa397f21753b594f03f30bb<br>
+https://github.com/stick-i/scblogs/commit/3c073c0eda71866a81222c8f5b38b52963bd113d<br>
+            <br>
+        </td>
+    </tr>
+</table>
+
+<h3 id="Service protection">Service protection</h3>
+<table border="1" >
+    <tr >
+        <td id="links-cell-7">
+https://github.com/xcyeye/aurora-blog/commit/a03785d14e53742eeb0816eaf66e10d792efdd59<br>
+https://github.com/lizibin/black-shop/commit/7bc2aab5ed1213ea44964644281c530a22a88cf7<br>
+https://github.com/nageoffer/congomall/commit/b3ac9cabb13c5c7d673f1bc673910ab1276675b7<br>
+https://github.com/nageoffer/congomall/commit/bcca484c9aab67daa91680e790881150dad1773a<br>
+https://github.com/SelimHorri/ecommerce-microservice-backend-app/commit/1749a986f1cc76ded129822fa42265a7df54d0cf<br>
+https://github.com/eventuate-tram/eventuate-tram-sagas-examples-customers-and-orders/commit/b2fb0017799bebee8957873caeaaab53693a9f90<br>
+https://github.com/HMingR/irh/commit/8b6e0caa50191416c4d65cb0bac4f2f3f347c805<br>
+https://github.com/Durancer/JMU-Campus/commit/9fb3a527ab5650fbc1bf94cee960a40dbc95028c<br>
+https://github.com/Zealon159/light-reading-cloud/commit/af6863b240cdd5f08e5b3cc6a957ab80f150fad7<br>
+https://github.com/stalary/microservice-recruit/commit/8d6a55723e9a4f0e20ed22e3d5b37f47ab539510<br>
+https://github.com/JoeCao/qbike/commit/b9f9235ce7511645a50848bc6f9278ba6ec0ceb4<br>
+https://github.com/MuhammetTahaDemiryol/rentacar-microservice/commit/8597fc6cc480e01e81897619768561bcad3e2dd9<br>
+https://github.com/zoltanvin/royal-reserve-bank/commit/3c717e7b94f7552644da67988ad6a4b0b6a4297a<br>
+https://github.com/DreamCats/school-bus/commit/a70dfa5a39d15bd3f332d8f1211481800f3390b7<br>
+https://github.com/DreamCats/school-bus/commit/11a1fbe7c3ac32f4c61c8b67bc07019691737a98<br>
+https://github.com/DreamCats/school-bus/commit/499bd48d96558bde7fb8fc85be7019f0055cef0d<br>
+https://github.com/itning/shw_server/commit/da6d5e34b916b08b82085133306e355483f18741<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/1b7b84230682d0bc8103ce3d9ecf2c8f0a7943b2<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/d83070c601105c1f4a08f77a352f985b6ea5600d<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/62e6795bc6f6fef6de1b5cc0d2163b205bd546e0<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/ab0fc9fca37b8b077073f6c853c492663938c6cb<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/7bb1b2e42ef56dbcb8df97abdf8b62c647e6a6a8<br>
+https://github.com/zhangxd1989/spring-boot-cloud/commit/023f51c1445458445ece7c2de0785c70c3ccd939<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/0fb49eb3eb5dc3dd82c55305f1e1c8be4ac1f6fb<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/4a7a24842fd2195a6ed29c9498a7ef24f24eb747<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/4b2552299945cba7230b62259d6c77b22a4aebb5<br>
+https://github.com/mincloud1501/spring-cloud-workshop/commit/71a65cbafb60b241ee03cb6b289e836bed196aad<br>
+https://github.com/ylw-github/taodong-shop/commit/dd8742a8348b4c64a8ca794d544a3271e94365a9<br>
+https://github.com/FudanSELab/train-ticket/commit/a4ed2433b0b6ab6e0d60115fc19efecb2548c6cd<br>
+https://github.com/FudanSELab/train-ticket/commit/ade814cf0b60d1ccd6c4bbf2b4c8e362b001aef0<br>
+https://github.com/abixen/abixen-platform/commit/d45f93829ffa37edf008b16138130fed024af891<br>
+https://github.com/abixen/abixen-platform/commit/e906ee846dfc7913f1b838523c644d23117a39e1<br>
+https://github.com/abixen/abixen-platform/commit/664ca5a58ac69cef19ecb449a29bc67d3113fa97<br>
+https://github.com/abixen/abixen-platform/commit/299e9bcd0f25efde2424ba89b07dc104498b76f1<br>
+https://github.com/abixen/abixen-platform/commit/fa11c9da8692ff35de671300499086dfb0da2baa<br>
+https://github.com/chaokunyang/microservices-event-sourcing/commit/798c2bfd19433d18566a98721e3072c1cd8dcfeb<br>
+https://github.com/0xcaffebabe/blb/commit/ac63c235fd6405b8f0edd837092d6af45ea56229<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/10bea327a27de8485cba37af3c5a102c198fc649<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/5f959dc1265f38da9a502ded27615f076c5750b4<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/936e5753b4244f3925cadd73997445e26daed4fd<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/eafceee97a34530505a425d956746a32b396069e<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/11cb78a280202aba8ab85a2e646ae5a12191c41c<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/7fa0d7bffe299484f74364297a839878b527120e<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/405ff0e60375a1cdf6e09f5ea1356b561f544965<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/3095342fc8fe2ad5f7da77d1cbe3b2ffc1a4228e<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/66cfa196f08ba001a7b0d075e4c75c3777d69038<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/cbd1a308d6fffbe125fca392503a0f8b991ae431<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/8fd418012a706bf2d4646a2ad201de6a53e99bab<br>
+https://github.com/KouShenhai/KCloud-Platform-Alibaba/commit/f0a552765dbd9e51fa272a1821ce283a90e22ffa<br>
+https://github.com/stick-i/scblogs/commit/15b55a56e22d2903c3528a979bea3c19091e3bb7<br>
+https://github.com/stick-i/scblogs/commit/387f7da4d9943ebafbfe1ccdca8c27231df99a87<br>
+https://github.com/stick-i/scblogs/commit/b3f115293483899cba3b59d02868c02b5595bb2c<br>
+https://github.com/stick-i/scblogs/commit/bc15fbd691878873a150880b7d9f0ae8cf4137e3<br>
+https://github.com/stick-i/scblogs/commit/7c171a25ef30ec3fcac4bc9e24f448bef05cd6cd<br>
+https://github.com/stick-i/scblogs/commit/4d7544b53dc29568fc5a246bed12d814632c793a<br>
+        </td>
+    </tr>
+</table>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const cells = ["links-cell-1", "links-cell-2","links-cell-3","links-cell-4","links-cell-5","links-cell-6","links-cell-7","links-cell-8"];
+        cells.forEach(cellId => {
+            const cell = document.getElementById(cellId);
+            const links = cell.innerHTML.split('<br>').map(link => {
+                link = link.trim();
+                return link.startsWith("http") ? `<a href="${link}">${link}</a>` : link;
+            }).join('<br>');
+            cell.innerHTML = links;
+        });
+    });
+</script>
+
+        
+      </div>
+      
+      
+      
+    </div>
+    
+    
+    
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">1. Classification of Microservice-specific changes</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Security"><span class="nav-number">1.1.</span> <span class="nav-text">Security</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Service%20communication%20and%20coordination"><span class="nav-number">1.2.</span> <span class="nav-text">Service communication and coordination</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Containers%20and%20orchestration"><span class="nav-number">1.3.</span> <span class="nav-text">Containers and orchestration</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Service%20registration%20and%20discovery"><span class="nav-number">1.4.</span> <span class="nav-text">Service registration and discovery</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Service%20registration%20and%20discovery"><span class="nav-number">1.5.</span> <span class="nav-text">Service registration and discovery</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Service%20gateway"><span class="nav-number">1.6.</span> <span class="nav-text">Service gateway</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Microservice%20monitoring%20and%20tracing"><span class="nav-number">1.7.</span> <span class="nav-text">Microservice monitoring and tracing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Service%20protection"><span class="nav-number">1.8.</span> <span class="nav-text">Service protection</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('-1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
